@@ -16,6 +16,7 @@
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
   },
+  "homepage": "https://miyagin15.github.io/resume",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
