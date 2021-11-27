@@ -6,7 +6,11 @@ function Works() {
   return (
     <div>
       <Header />
-      Works
+      <a
+        href="https://github.com/miyagin15"
+        rel="noreferrer noopener"
+        target="_blank"
+      >github</a>
       <Footer />
     </div>
   )
