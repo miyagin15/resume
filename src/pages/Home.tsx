@@ -30,7 +30,7 @@ function Home() {
         }}
       >
         <div style={{ flex: 1 }}>
-          <img src={Jump} width={'100%'} />
+          <img src={Jump} alt={"description of jump"} width={'100%'} />
           <div style={{ textAlign: 'center' }}>
             <p>小学校から大学まで陸上競技を続けた</p>
             <p>全国大会出場経験あり</p>

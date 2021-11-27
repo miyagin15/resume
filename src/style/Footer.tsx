@@ -1,8 +1,5 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { AiOutlineHome } from 'react-icons/ai'
-import { GiVintageRobot } from 'react-icons/gi'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
 
 function Footer() {
   const fontSize = 25
@@ -37,7 +34,9 @@ function Footer() {
               <li style={{ padding: padding, fontSize: fontSize }}>
                 <NavLink
                   to="/"
+                  exact
                   style={{ color: '#fff', textDecoration: 'none' }}
+                  activeStyle={{ color: selectionColor }}
                 >
                   Home
                 </NavLink>
@@ -46,6 +45,7 @@ function Footer() {
                 <NavLink
                   to="/about"
                   style={{ color: '#fff', textDecoration: 'none' }}
+                  activeStyle={{ color: selectionColor }}
                 >
                   About
                 </NavLink>
@@ -54,6 +54,7 @@ function Footer() {
                 <NavLink
                   to="/works"
                   style={{ color: '#fff', textDecoration: 'none' }}
+                  activeStyle={{ color: selectionColor }}
                 >
                   Works
                 </NavLink>
@@ -62,6 +63,7 @@ function Footer() {
                 <NavLink
                   to="/skills"
                   style={{ color: '#fff', textDecoration: 'none' }}
+                  activeStyle={{ color: selectionColor }}
                 >
                   Skills
                 </NavLink>
