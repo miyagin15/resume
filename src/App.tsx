@@ -12,7 +12,7 @@ import './App.css'
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
           <Route  exact path="/" component={Home} />
           <Route  path="/about" component={About} />
