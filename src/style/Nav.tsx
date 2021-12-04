@@ -2,7 +2,6 @@ import React from 'react'
 import { NavLink} from 'react-router-dom'
 import { AiOutlineHome } from 'react-icons/ai'
 import { GiVintageRobot, GiBiceps } from 'react-icons/gi'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
 function Nav() {
   const fontSize = 45
   const padding = 20
