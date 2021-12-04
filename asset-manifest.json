@@ -1,28 +1,30 @@
 {
   "files": {
     "main.css": "/resume/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/resume/static/js/main.0e952381.chunk.js",
-    "main.js.map": "/resume/static/js/main.0e952381.chunk.js.map",
-    "runtime-main.js": "/resume/static/js/runtime-main.11d07d73.js",
-    "runtime-main.js.map": "/resume/static/js/runtime-main.11d07d73.js.map",
-    "static/js/2.798b84d7.chunk.js": "/resume/static/js/2.798b84d7.chunk.js",
-    "static/js/2.798b84d7.chunk.js.map": "/resume/static/js/2.798b84d7.chunk.js.map",
-    "static/js/3.7a737576.chunk.js": "/resume/static/js/3.7a737576.chunk.js",
-    "static/js/3.7a737576.chunk.js.map": "/resume/static/js/3.7a737576.chunk.js.map",
+    "main.js": "/resume/static/js/main.ff7b05e9.chunk.js",
+    "main.js.map": "/resume/static/js/main.ff7b05e9.chunk.js.map",
+    "runtime-main.js": "/resume/static/js/runtime-main.d695297f.js",
+    "runtime-main.js.map": "/resume/static/js/runtime-main.d695297f.js.map",
+    "static/js/2.80b22c1e.chunk.js": "/resume/static/js/2.80b22c1e.chunk.js",
+    "static/js/2.80b22c1e.chunk.js.map": "/resume/static/js/2.80b22c1e.chunk.js.map",
+    "static/js/3.f3d2b570.chunk.js": "/resume/static/js/3.f3d2b570.chunk.js",
+    "static/js/3.f3d2b570.chunk.js.map": "/resume/static/js/3.f3d2b570.chunk.js.map",
     "index.html": "/resume/index.html",
     "static/css/main.8c8b27cf.chunk.css.map": "/resume/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.798b84d7.chunk.js.LICENSE.txt": "/resume/static/js/2.798b84d7.chunk.js.LICENSE.txt",
+    "static/js/2.80b22c1e.chunk.js.LICENSE.txt": "/resume/static/js/2.80b22c1e.chunk.js.LICENSE.txt",
+    "static/media/DmmCount.f33f40e6.jpg": "/resume/static/media/DmmCount.f33f40e6.jpg",
     "static/media/Jump.92dada9c.jpg": "/resume/static/media/Jump.92dada9c.jpg",
     "static/media/Kagoshima.da0b5256.jpg": "/resume/static/media/Kagoshima.da0b5256.jpg",
     "static/media/MasterReserach.4e90e2a8.jpg": "/resume/static/media/MasterReserach.4e90e2a8.jpg",
+    "static/media/Skills.a39d21f7.jpg": "/resume/static/media/Skills.a39d21f7.jpg",
     "static/media/TripleJump.d489079a.jpg": "/resume/static/media/TripleJump.d489079a.jpg",
     "static/media/UnivResearch.82115c86.jpg": "/resume/static/media/UnivResearch.82115c86.jpg",
     "static/media/Work.24d3a714.jpg": "/resume/static/media/Work.24d3a714.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.11d07d73.js",
-    "static/js/2.798b84d7.chunk.js",
+    "static/js/runtime-main.d695297f.js",
+    "static/js/2.80b22c1e.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.0e952381.chunk.js"
+    "static/js/main.ff7b05e9.chunk.js"
   ]
 }
