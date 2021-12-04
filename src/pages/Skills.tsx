@@ -2,7 +2,6 @@ import React from 'react'
 import Footer from '../style/Footer'
 import Header from '../style/Header'
 import DmmCount from '../Images/DmmCount.jpg'
-import DmmLank from '../Images/DmmLank.jpg'
 import Skill from '../Images/Skills.jpg'
 function Skills() {
   return (
