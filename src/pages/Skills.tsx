@@ -1,27 +1,40 @@
 import React from 'react'
 import Footer from '../style/Footer'
 import Header from '../style/Header'
-
+import DmmCount from '../Images/DmmCount.jpg'
+import DmmLank from '../Images/DmmLank.jpg'
+import Skill from '../Images/Skills.jpg'
 function Skills() {
   return (
-    <div>
+    <div style={{textAlign:"center",justifyContent:"center"}}>
       <Header />
-      <h2 id="保有スキル">保有資格</h2>
-      クラウドの資格は<a
-        href="https://www.credly.com/users/ginga-miyata/badges"
-        rel="noreferrer noopener"
-        target="_blank"
-      >credly</a>に掲載済み
-      <ul>
-        <li>基本情報技術者</li>
-        <li>応用情報技術者?</li>
-        <li>AWS Certified Developer – Associate</li>
-        <li>AWS Certified Solutions Architect – Associate</li>
-        <li>Microsoft Certified: Azure Fundamentals</li>
-        <li>Microsoft Certified: Azure Administrator Associate</li>
-        <li>TOEIC Speaking: 110点</li>
-        <li>TOEIC Listening & Reading Test: 805点</li>
-      </ul>
+      <div style={{justifyContent:"center", display: "flex" }}>
+        <div>
+          <h2 id="保有スキル">保有資格</h2>
+          クラウドの資格は<a
+            href="https://www.credly.com/users/ginga-miyata/badges"
+            rel="noreferrer noopener"
+            target="_blank"
+          >credly</a>に掲載済み
+          <ul>
+            <li>基本情報技術者</li>
+            <li>応用情報技術者?</li>
+            <li>AWS Certified Developer – Associate</li>
+            <li>AWS Certified Solutions Architect – Associate</li>
+            <li>Microsoft Certified: Azure Fundamentals</li>
+            <li>Microsoft Certified: Azure Administrator Associate</li>
+            <li>TOEIC Speaking: 110点</li>
+            <li>TOEIC Listening & Reading Test: 805点</li>
+          </ul>
+        </div>
+        <div style={{paddingLeft:"100px"}}>
+          <p>
+            英語で毎日欠かさずコミュニケーションしている。
+          </p>
+          <img style={{ width: "100%" }} src={DmmCount} alt={`description of DmmCount`} width={'10%'} />
+          {/* <img style={{ width: "10%" }} src={DmmLank} alt={`description of DmmLank`} width={'10%'} /> */}
+        </div>
+      </div>
       <hr />
       <h2 id="保有スキル">保有スキル</h2>
       <ul>
@@ -54,6 +67,7 @@ function Skills() {
           <img alt="Firebase" src="https://img.shields.io/badge/-Firebase-FFCA28?style=flat-square&amp;logo=Firebase&amp;logoColor=white" />
           <img alt="Docker" src="https://img.shields.io/badge/-Docker-46a2f1?style=flat-square&amp;logo=docker&amp;logoColor=white" />
         </p>
+        <img style={{ width: "50%" }} src={Skill} alt={`description of Skills`} width={'10%'} />
       </div>
       <Footer />
     </div>

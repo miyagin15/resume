@@ -72,7 +72,7 @@ function Home() {
     </div>
   );
   return (
-    <div style={{ backgroundColor: "#f5f5ff" }}>
+    <div style={{ backgroundColor: "#f5f5ff" ,}}>
       <Header />
       <h1 style={{ padding: "10px" }}>自己紹介</h1>
       <div
@@ -80,7 +80,7 @@ function Home() {
           border: 'black',
           textAlign: 'left',
           display: 'flex',
-          justifyContent: 'left',
+          justifyContent: 'center',
         }}
       >
         <div style={{ flex: 1 }}>
@@ -88,14 +88,13 @@ function Home() {
           <div style={{ textAlign: 'center' }}>
             <p>小学校から大学まで陸上競技を続けた</p>
             <p>全国大会出場経験あり</p>
+          {/* <YouTube videoId="2g811Eo7K8U" opts={opts} onReady={_onReady} /> */}
+          <YouTube videoId="bdu4HQvZC3I" opts={opts} onReady={_onReady} />
           </div>
         </div>
         <div style={{ flex: 3, paddingLeft: 50 }}>
           {experience_list}
           <br></br>
-          <p>趣味は跳ぶこと</p>
-          {/* <YouTube videoId="2g811Eo7K8U" opts={opts} onReady={_onReady} /> */}
-          <YouTube videoId="bdu4HQvZC3I" opts={opts} onReady={_onReady} />
         </div>
       </div>
       <Footer />
