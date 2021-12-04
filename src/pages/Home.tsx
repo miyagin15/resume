@@ -63,16 +63,18 @@ function Home() {
   ]
   const experience_list = experiences.map((experience) =>
     // <div style={{display:"table",border:"1px solid #000000",backgroundColor:"#ffffff"}}>
-    <div style={{content:"flex",flexWrap: "wrap", width:"50%",backgroundColor:"#ffffff",margin:"10px",borderRadius: "20px"}}>
-      <div style={{color: "#75bdff",fontSize:25}}>{experience.period} <span style={{color: "#333333",fontWeight:"bold",fontSize:20}}>{experience.where}</span></div>
-      <p style={{padding:"10px"}}>{experience.content}</p>
-      <img style={{width:"50%"}} src={experience.picture} alt={`description of ${experience.content}`} width={'50%'} />
+    <div style={{display:"flex",content:"flex",flexWrap: "wrap", width:"100%",backgroundColor:"#ffffff",margin:"10px",borderRadius: "20px"}}>
+      <div style={{color: "#75bdff",fontSize:25}}>{experience.period} 
+        <span style={{color: "#333333",fontWeight:"bold",fontSize:20}}> {experience.where}</span>
+        <p style={{color: "#333333",fontSize:20,padding:"10px"}}>{experience.content}</p>
+      </div>
+      <div><img style={{width:"50%"}} src={experience.picture} alt={`description of ${experience.content}`} width={'50%'} /></div>
     </div>
   );
   return (
     <div style={{backgroundColor:"#f5f5ff"}}>
       <Header />
-      <h1>自己紹介</h1>
+      <h1 style={{padding:"10px"}}>自己紹介</h1>
       <div
         style={{
           border: 'black',
@@ -88,7 +90,7 @@ function Home() {
             <p>全国大会出場経験あり</p>
           </div>
         </div>
-        <div style={{ flex: 2, paddingLeft: 50 }}>
+        <div style={{ flex: 3, paddingLeft: 50 }}>
           {experience_list}
           <br></br>
           <p>趣味は跳ぶこと</p>
