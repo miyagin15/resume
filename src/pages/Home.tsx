@@ -2,7 +2,19 @@ import React from 'react'
 import Footer from '../style/Footer'
 import Header from '../style/Header'
 import Jump from '../Images/Jump.jpg'
+import Kagoshima from '../Images/Kagoshima.jpg'
+import TripleJump from '../Images/TripleJump.jpg'
+import UnivResearch from '../Images/UnivResearch.jpg'
+import Work from '../Images/Work.jpg'
+import MasterReserach from '../Images/MasterReserach.jpg'
 import YouTube from 'react-youtube';
+
+type Experience = {
+  period: string
+  where: string
+  content: string
+  picture?:any
+}
 
 function Home() {
   const opts = {
@@ -17,8 +29,48 @@ function Home() {
     // access to player in all event handlers via event.target
     event.target.pauseVideo();
   }
+  const experiences:Experience[]=[
+    {
+      "period":"1996",
+      "where":"誕生",
+      "content": "鹿児島で生まれ育ち",
+      "picture": Kagoshima
+    },
+    {
+      "period":"2012-2015",
+      "where":"高校生",
+      "content": "陸上部。高校３年時に三段跳びで全国大会出場。全国30位ぐらい",
+      "picture":TripleJump
+    },
+    {
+      "period":"2015-2019",
+      "where":"大学の研究",
+      "content": "深層学習を用いて，センサデータから人の動作を推定する研究を行った",
+      "picture":UnivResearch
+    },
+    {
+      "period":"2019-2021",
+      "where":"大学院の研究",
+      "content": "人の顔情報をカメラから取得して，手を必要としない操作インタフェースアプリの研究を行った",
+      "picture": MasterReserach
+    },
+    {
+      "period":"2021-",
+      "where":"IT通信",
+      "content": "terraform, aws, azureなどを使用したクラウドソーリューション開発",
+      "picture":Work
+    },
+  ]
+  const experience_list = experiences.map((experience) =>
+    // <div style={{display:"table",border:"1px solid #000000",backgroundColor:"#ffffff"}}>
+    <div style={{content:"flex",flexWrap: "wrap", width:"50%",backgroundColor:"#ffffff",margin:"10px",borderRadius: "20px"}}>
+      <div style={{color: "#75bdff",fontSize:25}}>{experience.period} <span style={{color: "#333333",fontWeight:"bold",fontSize:20}}>{experience.where}</span></div>
+      <p style={{padding:"10px"}}>{experience.content}</p>
+      <img style={{width:"50%"}} src={experience.picture} alt={`description of ${experience.content}`} width={'50%'} />
+    </div>
+  );
   return (
-    <div>
+    <div style={{backgroundColor:"#f5f5ff"}}>
       <Header />
       <h1>自己紹介</h1>
       <div
@@ -37,14 +89,7 @@ function Home() {
           </div>
         </div>
         <div style={{ flex: 2, paddingLeft: 50 }}>
-          <p>
-            大学の研究室にて，深層学習を用いて，センサデータから人の動作を推定する研究を行った
-          </p>
-          <p>
-            大学院の研究室にて，人の顔情報をカメラから取得して，手を必要としない操作インタフェースの研究を行った
-          </p>
-          <p>大学在学中に，ソフトウェアの便利さに気付く</p>
-          <p>複数のインターンを経験し，アプリやウェブサービスの開発を行う</p>
+          {experience_list}
           <br></br>
           <p>趣味は跳ぶこと</p>
           {/* <YouTube videoId="2g811Eo7K8U" opts={opts} onReady={_onReady} /> */}
