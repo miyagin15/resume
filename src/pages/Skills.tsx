@@ -6,7 +6,7 @@ import DmmLank from '../Images/DmmLank.jpg'
 import Skill from '../Images/Skills.jpg'
 function Skills() {
   return (
-    <div style={{textAlign:"center",justifyContent:"center"}}>
+    <div style={{textAlign:"center",justifyContent:"center",backgroundColor: "#f5f5ff"}}>
       <Header />
       <div style={{justifyContent:"center", display: "flex" }}>
         <div>
