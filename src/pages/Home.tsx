@@ -13,7 +13,7 @@ type Experience = {
   period: string
   where: string
   content: string
-  picture?:any
+  picture?: any
 }
 
 function Home() {
@@ -25,56 +25,56 @@ function Home() {
     //   autoplay: 1,
     // },
   };
-  const _onReady:any=(event:any)=> {
+  const _onReady: any = (event: any) => {
     // access to player in all event handlers via event.target
     event.target.pauseVideo();
   }
-  const experiences:Experience[]=[
+  const experiences: Experience[] = [
     {
-      "period":"1996",
-      "where":"誕生",
+      "period": "1996",
+      "where": "誕生",
       "content": "鹿児島で生まれ育ち",
       "picture": Kagoshima
     },
     {
-      "period":"2012-2015",
-      "where":"高校生",
+      "period": "2012-2015",
+      "where": "高校生",
       "content": "陸上部。高校３年時に三段跳びで全国大会出場。全国30位ぐらい",
-      "picture":TripleJump
+      "picture": TripleJump
     },
     {
-      "period":"2015-2019",
-      "where":"大学の研究",
+      "period": "2015-2019",
+      "where": "大学の研究",
       "content": "深層学習を用いて，センサデータから人の動作を推定する研究を行った",
-      "picture":UnivResearch
+      "picture": UnivResearch
     },
     {
-      "period":"2019-2021",
-      "where":"大学院の研究",
+      "period": "2019-2021",
+      "where": "大学院の研究",
       "content": "人の顔情報をカメラから取得して，手を必要としない操作インタフェースアプリの研究を行った",
       "picture": MasterReserach
     },
     {
-      "period":"2021-",
-      "where":"IT通信",
+      "period": "2021-",
+      "where": "IT通信",
       "content": "terraform, aws, azureなどを使用したクラウドソーリューション開発",
-      "picture":Work
+      "picture": Work
     },
   ]
   const experience_list = experiences.map((experience) =>
     // <div style={{display:"table",border:"1px solid #000000",backgroundColor:"#ffffff"}}>
-    <div style={{display:"flex",content:"flex",flexWrap: "wrap", width:"100%",backgroundColor:"#ffffff",margin:"10px",borderRadius: "20px"}}>
-      <div style={{color: "#75bdff",fontSize:25}}>{experience.period} 
-        <span style={{color: "#333333",fontWeight:"bold",fontSize:20}}> {experience.where}</span>
-        <p style={{color: "#333333",fontSize:20,padding:"10px"}}>{experience.content}</p>
+    <div style={{ display: "flex", content: "flex", flexWrap: "wrap", width: "100%", backgroundColor: "#ffffff", margin: "10px", borderRadius: "20px" }}>
+      <div style={{ color: "#75bdff", fontSize: 25 }}>{experience.period}
+        <span style={{ color: "#333333", fontWeight: "bold", fontSize: 20 }}> {experience.where}</span>
+        <p style={{ color: "#333333", fontSize: 20, padding: "10px" }}>{experience.content}</p>
       </div>
-      <div><img style={{width:"50%"}} src={experience.picture} alt={`description of ${experience.content}`} width={'50%'} /></div>
+      <div><img style={{ width: "50%" }} src={experience.picture} alt={`description of ${experience.content}`} width={'50%'} /></div>
     </div>
   );
   return (
-    <div style={{backgroundColor:"#f5f5ff"}}>
+    <div style={{ backgroundColor: "#f5f5ff" }}>
       <Header />
-      <h1 style={{padding:"10px"}}>自己紹介</h1>
+      <h1 style={{ padding: "10px" }}>自己紹介</h1>
       <div
         style={{
           border: 'black',
