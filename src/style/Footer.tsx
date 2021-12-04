@@ -43,15 +43,6 @@ function Footer() {
               </li>
               <li style={{ padding: padding, fontSize: fontSize }}>
                 <NavLink
-                  to="/about"
-                  style={{ color: '#fff', textDecoration: 'none' }}
-                  activeStyle={{ color: selectionColor }}
-                >
-                  About
-                </NavLink>
-              </li>
-              <li style={{ padding: padding, fontSize: fontSize }}>
-                <NavLink
                   to="/works"
                   style={{ color: '#fff', textDecoration: 'none' }}
                   activeStyle={{ color: selectionColor }}
