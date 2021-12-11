@@ -5,9 +5,9 @@ import DmmCount from '../Images/DmmCount.jpg'
 import Skill from '../Images/Skills.jpg'
 function Skills() {
   return (
-    <div style={{textAlign:"center",justifyContent:"center",backgroundColor: "#f5f5ff"}}>
+    <div style={{ textAlign: "center", justifyContent: "center", backgroundColor: "#f5f5ff" }}>
       <Header />
-      <div style={{justifyContent:"center", display: "flex" }}>
+      <div style={{ justifyContent: "center", display: "flex" }}>
         <div>
           <h2 id="保有スキル">保有資格</h2>
           クラウドの資格は<a
@@ -15,18 +15,20 @@ function Skills() {
             rel="noreferrer noopener"
             target="_blank"
           >credly</a>に掲載済み
-          <ul>
-            <li>基本情報技術者</li>
-            <li>応用情報技術者?</li>
-            <li>AWS Certified Developer – Associate</li>
-            <li>AWS Certified Solutions Architect – Associate</li>
-            <li>Microsoft Certified: Azure Fundamentals</li>
-            <li>Microsoft Certified: Azure Administrator Associate</li>
-            <li>TOEIC Speaking: 110点</li>
-            <li>TOEIC Listening & Reading Test: 805点</li>
-          </ul>
+          <div style={{ display: "flex", alignItems: "center", flexDirection: "column", listStyle: "disc", paddingLeft: "15px" }}>
+            <ul>
+              <li>基本情報技術者</li>
+              <li>応用情報技術者?</li>
+              <li>AWS Certified Developer – Associate</li>
+              <li>AWS Certified Solutions Architect – Associate</li>
+              <li>Microsoft Certified: Azure Fundamentals</li>
+              <li>Microsoft Certified: Azure Administrator Associate</li>
+              <li>TOEIC Speaking: 110点</li>
+              <li>TOEIC Listening & Reading Test: 805点</li>
+            </ul>
+          </div>
         </div>
-        <div style={{paddingLeft:"100px"}}>
+        <div style={{ paddingLeft: "100px" }}>
           <p>
             英語で毎日欠かさずコミュニケーションしている。
           </p>
@@ -36,10 +38,12 @@ function Skills() {
       </div>
       <hr />
       <h2 id="保有スキル">保有スキル</h2>
-      <ul>
-        <li>JavaScript / TypeScript + React.js でのフロントエンド開発・設計</li>
-        <li>Django でのサーバーサイド開発</li>
-      </ul>
+      <div style={{ display: "flex", alignItems: "center", flexDirection: "column", listStyle: "disc", paddingLeft: "15px" }}>
+        <ul>
+          <li>JavaScript / TypeScript + React.js でのフロントエンド開発・設計</li>
+          <li>Django でのサーバーサイド開発</li>
+        </ul>
+      </div>
       <hr />
       <h2 id="技術スタック">技術スタック</h2>
       <div style={{ paddingLeft: "10px" }}>
