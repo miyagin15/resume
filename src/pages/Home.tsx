@@ -63,7 +63,7 @@ function Home() {
   ]
   const experience_list = experiences.map((experience) =>
     // <div style={{display:"table",border:"1px solid #000000",backgroundColor:"#ffffff"}}>
-    <div style={{ display: "flex", content: "flex", flexWrap: "wrap", width: "100%", backgroundColor: "#ffffff", margin: "10px", borderRadius: "20px" }}>
+    <div key={experience.content} style={{ display: "flex", content: "flex", flexWrap: "wrap", width: "100%", backgroundColor: "#ffffff", margin: "10px", borderRadius: "20px" }}>
       <div style={{ color: "#75bdff", fontSize: 25 }}>{experience.period}
         <span style={{ color: "#333333", fontWeight: "bold", fontSize: 20 }}> {experience.where}</span>
         <p style={{ color: "#333333", fontSize: 20, padding: "10px" }}>{experience.content}</p>
