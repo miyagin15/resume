@@ -21,7 +21,7 @@ function Header() {
             marginLeft: 20,
           }}
         >
-          miyagin15
+          <a style={{color: "#FFF"}} href="/">miyagin15</a>
         </footer>
       </div>
       <div>
