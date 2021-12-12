@@ -20,16 +20,20 @@ jobs:
     - name: Install Node.js
       uses: actions/setup-node@v1
       with:
-        node-version: 13.x
-    
+        node-version: 14.15.0
+        
+    - name: yarn install
+      run: |
+        yarn install --frozen-lockfile --verbose 
+
     - name: Install NPM packages
-      run: npm ci
+      run: yarn ci
     
     - name: Build project
-      run: npm run build
+      run: yarn run build
     
     - name: Run tests
-      run: npm run test
+      run: yarn run test
 
     - name: Upload production-ready build files
       uses: actions/upload-artifact@v2
