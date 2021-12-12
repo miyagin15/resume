@@ -20,12 +20,12 @@ jobs:
     - name: Install Node.js
       uses: actions/setup-node@v1
       with:
-        node-version: 13.x
+        node-version: 14.15.0
         
     - name: yarn install
       run: |
         yarn install --frozen-lockfile --verbose 
-        
+
     - name: Install NPM packages
       run: yarn ci
     
