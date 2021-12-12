@@ -2,11 +2,13 @@ import React from 'react'
 import { NavLink} from 'react-router-dom'
 import { AiOutlineHome } from 'react-icons/ai'
 import { GiVintageRobot, GiBiceps } from 'react-icons/gi'
-function Nav() {
-  const fontSize = 45
-  const padding = 20
-  const selectionColor = 'yellow'
+import { useMediaQuery } from "react-responsive"
 
+function Nav() {
+  const isMobileScreen: boolean = useMediaQuery({ query: '(max-width: 560px)'})
+  const fontSize = isMobileScreen ? 10 : 45;
+  const padding = 10
+  const selectionColor = 'yellow'
   return (
     <nav
       style={{
@@ -30,6 +32,7 @@ function Nav() {
             fontSize: fontSize,
           }}
         >
+
           <AiOutlineHome />
 
           <NavLink

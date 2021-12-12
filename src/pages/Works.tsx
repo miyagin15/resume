@@ -8,8 +8,8 @@ function Works() {
       <Header />
       <div >
         <h2 id="保有スキル">職務経歴詳細</h2>
-        <div style={{ display: "flex", alignItems: "center", flexDirection: "column", listStyle: "disc", paddingLeft: "15px" }}>
-          <ul>
+        <div style={{ display: "flex", alignItems: "center", flexDirection: "column", listStyle: "disc", paddingLeft: "5px" }}>
+          <ul style={{ textAlign: "left" }}>
             <li>インターン1社2年 (LineAPI+LinePay+Stripe+Watson+Django+React)</li>
             <li>2020年インターン3社 (Unity,Swift,AWS(ETL処理),Swift)</li>
             <li>2021年インターン3社 (Unity,GCP,React,CloudFormation,CDK)</li>
@@ -18,8 +18,8 @@ function Works() {
           </ul>
         </div>
         <h2 id="保有スキル">趣味開発。リリース済みアプリ</h2>
-        <div style={{ display: "flex", alignItems: "center", flexDirection: "column", listStyle: "disc", paddingLeft: "15px" }}>
-          <ul>
+        <div style={{ display: "flex", alignItems: "center", flexDirection: "column", listStyle: "disc", paddingLeft: "5px" }}>
+          <ul style={{ textAlign: "left" }}>
             <li>AI顔の大きさ診断アプリ (Unity+ncmb+firebase)</li>
             <li>カロリーアプリ (react-native+gcp)</li>
             <li>ナッツの栄養アプリ (Flutter+firebase)</li>
