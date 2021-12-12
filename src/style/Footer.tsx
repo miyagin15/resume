@@ -15,7 +15,7 @@ function Footer() {
       }}
     >
       <div>
-        <footer style={{ height: 100, background: '#666', color: '#fff' }}>
+        <footer style={{ height: 50, background: '#666', color: '#fff' }}>
           <nav
             style={{
               background: '#666',
