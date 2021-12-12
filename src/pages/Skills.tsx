@@ -3,7 +3,9 @@ import Footer from '../style/Footer'
 import Header from '../style/Header'
 import DmmCount from '../Images/DmmCount.jpg'
 import Skill from '../Images/Skills.jpg'
+import { useMediaQuery } from "react-responsive"
 function Skills() {
+  const isMobileScreen: boolean = useMediaQuery({ query: '(max-width: 560px)' })
   return (
     <div style={{ textAlign: "center", justifyContent: "center", backgroundColor: "#f5f5ff" }}>
       <Header />
@@ -15,8 +17,8 @@ function Skills() {
             rel="noreferrer noopener"
             target="_blank"
           >credly</a>に掲載済み
-          <div style={{ display: "flex", alignItems: "center", flexDirection: "column", listStyle: "disc", paddingLeft: "15px" }}>
-            <ul>
+          <div style={{ display: "flex", alignItems: "left", flexDirection: "column", listStyle: "disc", paddingLeft: "15px" }}>
+            <ul style={{ textAlign: "left" }}>
               <li>基本情報技術者</li>
               <li>応用情報技術者?</li>
               <li>AWS Certified Developer – Associate</li>
@@ -28,18 +30,18 @@ function Skills() {
             </ul>
           </div>
         </div>
-        <div style={{ paddingLeft: "100px" }}>
+        {isMobileScreen || <div style={{ paddingLeft: "30px" }}>
           <p>
             英語で毎日欠かさずコミュニケーションしている。
           </p>
           <img style={{ width: "100%" }} src={DmmCount} alt={`description of DmmCount`} width={'10%'} />
           {/* <img style={{ width: "10%" }} src={DmmLank} alt={`description of DmmLank`} width={'10%'} /> */}
-        </div>
+        </div>}
       </div>
       <hr />
       <h2 id="保有スキル">保有スキル</h2>
       <div style={{ display: "flex", alignItems: "center", flexDirection: "column", listStyle: "disc", paddingLeft: "15px" }}>
-        <ul>
+        <ul style={{ textAlign: "left" }}>
           <li>JavaScript / TypeScript + React.js でのフロントエンド開発・設計</li>
           <li>Django でのサーバーサイド開発</li>
         </ul>
