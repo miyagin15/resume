@@ -20,7 +20,8 @@ function Skills() {
           <div style={{ display: "flex", alignItems: "left", flexDirection: "column", listStyle: "disc", paddingLeft: "15px" }}>
             <ul style={{ textAlign: "left" }}>
               <li>基本情報技術者</li>
-              <li>応用情報技術者?</li>
+              <li>応用情報技術者</li>
+              <li>AWS Certified Cloud Practitioner</li>
               <li>AWS Certified Developer – Associate</li>
               <li>AWS Certified Solutions Architect – Associate</li>
               <li>Microsoft Certified: Azure Fundamentals</li>
