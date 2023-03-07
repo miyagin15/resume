@@ -38,7 +38,7 @@ jobs:
     - name: Deploy to gh-pages
       uses: actions/upload-pages-artifact@v1
       with:
-        publish_dir: ./build
+          path: build
   
   deploy:
     needs: build
