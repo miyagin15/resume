@@ -1,5 +1,7 @@
 {
     "employments": [
+        "2022上半期 (CDK+AWS+Lambda+Python+CirclCI)",
+        "2022下半期 (Terraform+Azure+CircleCI+Bash)",
         "2021上半期 (Terraform+AWS+Azure+python)",
         "2021下半期 (python+NoSQL+Azure+AWS+深層学習)"
     ],
