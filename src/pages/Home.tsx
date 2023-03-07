@@ -1,9 +1,9 @@
 import Footer from '../style/Footer'
 import Header from '../style/Header'
-import TripleJump from '../images/TripleJump.jpg'
-import UnivResearch from '../images/UnivResearch.jpg'
-import Work from '../images/Work.jpg'
-import MasterReserach from '../images/MasterReserach.jpg'
+import TripleJump from '../Images/TripleJump.jpg'
+import UnivResearch from '../Images/UnivResearch.jpg'
+import Work from '../Images/Work.jpg'
+import MasterReserach from '../Images/MasterReserach.jpg'
 import { useMediaQuery } from "react-responsive"
 
 type Experience = {

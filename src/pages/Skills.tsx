@@ -1,7 +1,7 @@
 import Footer from '../style/Footer'
 import Header from '../style/Header'
-import DmmCount from '../images/DmmCount.jpg'
-import Skill from '../images/Skills.jpg'
+import DmmCount from '../Images/DmmCount.jpg'
+import Skill from '../Images/Skills.jpg'
 import { useMediaQuery } from "react-responsive"
 import skills from '../data/skills.json'
 function Skills() {
