@@ -1,20 +1,18 @@
 {
   "files": {
     "main.css": "/resume/static/css/main.a617e044.chunk.css",
-    "main.js": "/resume/static/js/main.8a3d85d7.chunk.js",
-    "main.js.map": "/resume/static/js/main.8a3d85d7.chunk.js.map",
-    "runtime-main.js": "/resume/static/js/runtime-main.ad096a3c.js",
-    "runtime-main.js.map": "/resume/static/js/runtime-main.ad096a3c.js.map",
-    "static/js/2.3966e8bc.chunk.js": "/resume/static/js/2.3966e8bc.chunk.js",
-    "static/js/2.3966e8bc.chunk.js.map": "/resume/static/js/2.3966e8bc.chunk.js.map",
-    "static/js/3.e02470cd.chunk.js": "/resume/static/js/3.e02470cd.chunk.js",
-    "static/js/3.e02470cd.chunk.js.map": "/resume/static/js/3.e02470cd.chunk.js.map",
+    "main.js": "/resume/static/js/main.36112d92.chunk.js",
+    "main.js.map": "/resume/static/js/main.36112d92.chunk.js.map",
+    "runtime-main.js": "/resume/static/js/runtime-main.cf8a29fe.js",
+    "runtime-main.js.map": "/resume/static/js/runtime-main.cf8a29fe.js.map",
+    "static/js/2.9f1c8d54.chunk.js": "/resume/static/js/2.9f1c8d54.chunk.js",
+    "static/js/2.9f1c8d54.chunk.js.map": "/resume/static/js/2.9f1c8d54.chunk.js.map",
+    "static/js/3.cd8bedad.chunk.js": "/resume/static/js/3.cd8bedad.chunk.js",
+    "static/js/3.cd8bedad.chunk.js.map": "/resume/static/js/3.cd8bedad.chunk.js.map",
     "index.html": "/resume/index.html",
     "static/css/main.a617e044.chunk.css.map": "/resume/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.3966e8bc.chunk.js.LICENSE.txt": "/resume/static/js/2.3966e8bc.chunk.js.LICENSE.txt",
-    "static/media/DmmCount.f33f40e6.jpg": "/resume/static/media/DmmCount.f33f40e6.jpg",
-    "static/media/Jump.92dada9c.jpg": "/resume/static/media/Jump.92dada9c.jpg",
-    "static/media/Kagoshima.da0b5256.jpg": "/resume/static/media/Kagoshima.da0b5256.jpg",
+    "static/js/2.9f1c8d54.chunk.js.LICENSE.txt": "/resume/static/js/2.9f1c8d54.chunk.js.LICENSE.txt",
+    "static/media/DmmCount.21e878de.jpg": "/resume/static/media/DmmCount.21e878de.jpg",
     "static/media/MasterReserach.4e90e2a8.jpg": "/resume/static/media/MasterReserach.4e90e2a8.jpg",
     "static/media/Skills.a39d21f7.jpg": "/resume/static/media/Skills.a39d21f7.jpg",
     "static/media/TripleJump.d489079a.jpg": "/resume/static/media/TripleJump.d489079a.jpg",
@@ -22,9 +20,9 @@
     "static/media/Work.24d3a714.jpg": "/resume/static/media/Work.24d3a714.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ad096a3c.js",
-    "static/js/2.3966e8bc.chunk.js",
+    "static/js/runtime-main.cf8a29fe.js",
+    "static/js/2.9f1c8d54.chunk.js",
     "static/css/main.a617e044.chunk.css",
-    "static/js/main.8a3d85d7.chunk.js"
+    "static/js/main.36112d92.chunk.js"
   ]
 }
