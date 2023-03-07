@@ -3,15 +3,13 @@ import Header from '../style/Header'
 import DmmCount from '../images/DmmCount.jpg'
 import Skill from '../images/Skills.jpg'
 import { useMediaQuery } from "react-responsive"
-import certifications from '../data/certifications.json'
-import favorites from '../data/favorites.json'
 import skills from '../data/skills.json'
 function Skills() {
   const isMobileScreen: boolean = useMediaQuery({ query: '(max-width: 560px)' })
-  const certificationList = certifications.data.map((certification) =>
-    <li>{certification}</li>
+  const certificationList = skills.certifaictions.map((certifaiction) =>
+    <li>{certifaiction}</li>
   );
-  const favoritesList = favorites.data.map((favorite) =>
+  const favoritesList = skills.favorites.map((favorite) =>
     <li>{favorite}</li>
   );
   const imageColorList = ["007ACC", "F7DF1E", "3776AB", "3776e3", "46a2f1", "007396", "4FC08D", "45b8d8", "092E20", "FFCA28", "46a2f1"]
