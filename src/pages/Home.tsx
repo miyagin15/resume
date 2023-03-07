@@ -62,6 +62,7 @@ function Home() {
   return (
     <div style={{ backgroundColor: "#f5f5ff" ,}}>
       <Header />
+      <h1 style={{ padding: "10px" }}>自己紹介</h1>
       <div
         style={{
           border: 'black',
