@@ -1,0 +1,21 @@
+{
+    "language": [
+        "TypeScript",
+        "JavaScript",
+        "Python",
+        "Csharp",
+        "bach",
+        "yaml"
+    ],
+    "other": [
+        "AWS",
+        "Azure",
+        "Unity",
+        "UE5",
+        "Vue",
+        "React",
+        "Django",
+        "FIrebase",
+        "Docker"
+    ]
+}

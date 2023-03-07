@@ -1,11 +1,10 @@
-import React from 'react'
 import Footer from '../style/Footer'
 import Header from '../style/Header'
-import Kagoshima from '../Images/Kagoshima.jpg'
-import TripleJump from '../Images/TripleJump.jpg'
-import UnivResearch from '../Images/UnivResearch.jpg'
-import Work from '../Images/Work.jpg'
-import MasterReserach from '../Images/MasterReserach.jpg'
+import Kagoshima from '../images/Kagoshima.jpg'
+import TripleJump from '../images/TripleJump.jpg'
+import UnivResearch from '../images/UnivResearch.jpg'
+import Work from '../images/Work.jpg'
+import MasterReserach from '../images/MasterReserach.jpg'
 import { useMediaQuery } from "react-responsive"
 
 type Experience = {
@@ -16,7 +15,7 @@ type Experience = {
 }
 
 function Home() {
-  const isMobileScreen: boolean = useMediaQuery({ query: '(max-width: 560px)'})
+  const isMobileScreen: boolean = useMediaQuery({ query: '(max-width: 560px)' })
   const experiences: Experience[] = [
     {
       "period": "2021-",
@@ -60,7 +59,7 @@ function Home() {
     </div>
   );
   return (
-    <div style={{ backgroundColor: "#f5f5ff" ,}}>
+    <div style={{ backgroundColor: "#f5f5ff", }}>
       <Header />
       <h1 style={{ padding: "10px" }}>自己紹介</h1>
       <div
@@ -71,7 +70,7 @@ function Home() {
           justifyContent: 'center',
         }}
       >
-        {isMobileScreen ||  <div style={{ flex: 0 }}>
+        {isMobileScreen || <div style={{ flex: 0 }}>
           <div style={{ textAlign: 'center' }}>
           </div>
         </div>}
