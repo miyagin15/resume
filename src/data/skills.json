@@ -5,24 +5,57 @@
         "Pythonを使ったデータ分析・モデル開発, 推論",
         "Django でのサーバーサイド開発"
     ],
-    "language": [
-        "TypeScript",
-        "JavaScript",
-        "Python",
-        "Csharp",
-        "bach",
-        "yaml"
+    "lanugages": [
+        {
+            "alt": "TypeScript",
+            "src": "https://img.shields.io/badge/-TypeScript-007ACC?style=flat-square&amp;logo=typescript&amp;logoColor=white"
+        },
+        {
+            "alt": "JavaScript",
+            "src": "https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&amp;logo=JavaScript&amp;logoColor=white"
+        },
+        {
+            "alt": "Python",
+            "src": "https://img.shields.io/badge/-Python-3776AB?style=flat-square&amp;logo=Python&amp;logoColor=white"
+        },
+        {
+            "alt": "C#",
+            "src": "https://img.shields.io/badge/-Csharp-3776e3?style=flat-square&amp;logo=Csharp&amp;logoColor=white"
+        }
     ],
-    "other": [
-        "AWS",
-        "Azure",
-        "Unity",
-        "UE5",
-        "Vue",
-        "React",
-        "Django",
-        "FIrebase",
-        "Docker"
+    "frameworks": [
+        {
+            "alt": "AWS",
+            "src": "https://img.shields.io/badge/-AWS-F7DF1E?style=flat-square&amp;logo=Amazon+AWS&amp;logoColor=white"
+        },
+        {
+            "alt": "Azure",
+            "src": "https://img.shields.io/badge/-Azure-46a2f1?style=flat-square&amp;logo=Microsoft+Azure&amp;logoColor=white"
+        },
+        {
+            "alt": "Unity",
+            "src": "https://img.shields.io/badge/-Unity-007396?style=flat-square&amp;logo=Unity&amp;logoColor=white"
+        },
+        {
+            "alt": "Vue",
+            "src": "https://img.shields.io/badge/-Vue.js-4FC08D?style=flat-square&amp;logo=Vue.js&amp;logoColor=white"
+        },
+        {
+            "alt": "React",
+            "src": "https://img.shields.io/badge/-React-45b8d8?style=flat-square&amp;logo=react&amp;logoColor=white"
+        },
+        {
+            "alt": "Django",
+            "src": "https://img.shields.io/badge/-Django-092E20?style=flat-square&amp;logo=Django&amp;logoColor=white"
+        },
+        {
+            "alt": "Firebase",
+            "src": "https://img.shields.io/badge/-Firebase-FFCA28?style=flat-square&amp;logo=Firebase&amp;logoColor=white"
+        },
+        {
+            "alt": "Docker",
+            "src": "https://img.shields.io/badge/-Docker-46a2f1?style=flat-square&amp;logo=docker&amp;logoColor=white"
+        }
     ],
     "certifaictions": [
         "TOEIC Speaking: 120点",

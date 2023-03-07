@@ -12,12 +12,11 @@ function Skills() {
   const favoritesList = skills.favorites.map((favorite) =>
     <li>{favorite}</li>
   );
-  const imageColorList = ["007ACC", "F7DF1E", "3776AB", "3776e3", "46a2f1", "007396", "4FC08D", "45b8d8", "092E20", "FFCA28", "46a2f1"]
-  const languageList = skills.language.map((language, index) =>
-    <img alt={language} src={`https://img.shields.io/badge/-${language}-${imageColorList[index]}?style=flat-square&amp;logo=${language}&amp;logoColor=white`} />
+  const languageList = skills.lanugages.map((language) =>
+    <img alt={language.alt} src={`${language.src}`}></img>
   );
-  const otherList = skills.other.map((other, index) =>
-    <img alt={other} src={`https://img.shields.io/badge/-${other}-${imageColorList[index]}?style=flat-square&amp;logo=${other}&amp;logoColor=white`} />
+  const frameworkList = skills.frameworks.map((framework) =>
+    <img alt={framework.alt} src={`${framework.src}`}></img>
   );
   return (
     <div style={{ textAlign: "center", justifyContent: "center", backgroundColor: "#f5f5ff" }}>
@@ -42,7 +41,7 @@ function Skills() {
         </p>
         <h3 id="フレームワークその他">フレームワーク・その他</h3>
         <p>
-          {otherList}
+          {frameworkList}
         </p>
         <img style={{ width: "50%" }} src={Skill} alt={`description of Skills`} width={'10%'} />
       </div>
@@ -63,7 +62,7 @@ function Skills() {
         <h2 >
           英語でのコミュニケーションは勉強中。
         </h2>
-        <img style={{ width: "80%" }} src={DmmCount} alt={`description of DmmCount`} width={'10%'} />
+        <img style={{ width: "30%" }} src={DmmCount} alt={`description of DmmCount`} width={'10%'} />
       </div>}
       <hr />
       <Footer />
