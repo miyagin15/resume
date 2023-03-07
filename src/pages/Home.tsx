@@ -1,6 +1,5 @@
 import Footer from '../style/Footer'
 import Header from '../style/Header'
-import Kagoshima from '../images/Kagoshima.jpg'
 import TripleJump from '../images/TripleJump.jpg'
 import UnivResearch from '../images/UnivResearch.jpg'
 import Work from '../images/Work.jpg'
@@ -40,13 +39,7 @@ function Home() {
       "where": "高校生",
       "content": "陸上部。高校３年時に三段跳びで全国大会出場。全国30位ぐらい",
       "picture": TripleJump
-    },
-    {
-      "period": "1996",
-      "where": "誕生",
-      "content": "鹿児島で生まれ育ち",
-      "picture": Kagoshima
-    },
+    }
   ]
   const experienceList = experiences.map((experience) =>
     // <div style={{display:"table",border:"1px solid #000000",backgroundColor:"#ffffff"}}>
