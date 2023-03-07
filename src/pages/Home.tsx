@@ -1,13 +1,9 @@
-import React from 'react'
 import Footer from '../style/Footer'
 import Header from '../style/Header'
-import Jump from '../Images/Jump.jpg'
-import Kagoshima from '../Images/Kagoshima.jpg'
 import TripleJump from '../Images/TripleJump.jpg'
 import UnivResearch from '../Images/UnivResearch.jpg'
 import Work from '../Images/Work.jpg'
 import MasterReserach from '../Images/MasterReserach.jpg'
-import YouTube from 'react-youtube';
 import { useMediaQuery } from "react-responsive"
 
 type Experience = {
@@ -18,37 +14,13 @@ type Experience = {
 }
 
 function Home() {
-  const isMobileScreen: boolean = useMediaQuery({ query: '(max-width: 560px)'})
-  const opts = {
-    // height: '100%',
-    width: '100%',
-    // playerVars: {
-    //   // https://developers.google.com/youtube/player_parameters
-    //   autoplay: 1,
-    // },
-  };
-  const _onReady: any = (event: any) => {
-    // access to player in all event handlers via event.target
-    event.target.pauseVideo();
-  }
+  const isMobileScreen: boolean = useMediaQuery({ query: '(max-width: 560px)' })
   const experiences: Experience[] = [
     {
-      "period": "1996",
-      "where": "誕生",
-      "content": "鹿児島で生まれ育ち",
-      "picture": Kagoshima
-    },
-    {
-      "period": "2012-2015",
-      "where": "高校生",
-      "content": "陸上部。高校３年時に三段跳びで全国大会出場。全国30位ぐらい",
-      "picture": TripleJump
-    },
-    {
-      "period": "2015-2019",
-      "where": "大学の研究",
-      "content": "深層学習を用いて，センサデータから人の動作を推定する研究を行った",
-      "picture": UnivResearch
+      "period": "2021-",
+      "where": "IT通信",
+      "content": "terraform, aws, azureなどを使用したクラウドソーリューション開発",
+      "picture": Work
     },
     {
       "period": "2019-2021",
@@ -57,13 +29,19 @@ function Home() {
       "picture": MasterReserach
     },
     {
-      "period": "2021-",
-      "where": "IT通信",
-      "content": "terraform, aws, azureなどを使用したクラウドソーリューション開発",
-      "picture": Work
+      "period": "2015-2019",
+      "where": "大学の研究",
+      "content": "深層学習を用いて，センサデータから人の動作を推定する研究を行った",
+      "picture": UnivResearch
     },
+    {
+      "period": "2012-2015",
+      "where": "高校生",
+      "content": "陸上部。高校３年時に三段跳びで全国大会出場。全国30位ぐらい",
+      "picture": TripleJump
+    }
   ]
-  const experience_list = experiences.map((experience) =>
+  const experienceList = experiences.map((experience) =>
     // <div style={{display:"table",border:"1px solid #000000",backgroundColor:"#ffffff"}}>
     <div key={experience.content} style={{ display: "flex", content: "flex", flexWrap: "wrap", width: "100%", backgroundColor: "#ffffff", margin: "10px", borderRadius: "20px" }}>
       <div style={{ color: "#75bdff", fontSize: 25 }}>{experience.period}
@@ -74,7 +52,7 @@ function Home() {
     </div>
   );
   return (
-    <div style={{ backgroundColor: "#f5f5ff" ,}}>
+    <div style={{ backgroundColor: "#f5f5ff", }}>
       <Header />
       <h1 style={{ padding: "10px" }}>自己紹介</h1>
       <div
@@ -85,16 +63,12 @@ function Home() {
           justifyContent: 'center',
         }}
       >
-        {isMobileScreen ||  <div style={{ flex: 1 }}>
-        <img src={Jump} alt={"description of jump"} width={'100%'} />
+        {isMobileScreen || <div style={{ flex: 0 }}>
           <div style={{ textAlign: 'center' }}>
-            <p>小学校から大学まで陸上競技を続けた</p>
-            <p>全国大会出場経験あり</p>
-          <YouTube videoId="bdu4HQvZC3I" opts={opts} onReady={_onReady} />
           </div>
         </div>}
-        <div style={{ flex: 1, padding: 0 }}>
-          {experience_list}
+        <div style={{ flex: 1, padding: 10 }}>
+          {experienceList}
           <br></br>
         </div>
       </div>
