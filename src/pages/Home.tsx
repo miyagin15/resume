@@ -19,13 +19,13 @@ function Home() {
     {
       "period": "2021-",
       "where": "IT通信",
-      "content": "terraform, aws, azureなどを使用したクラウドソーリューション開発",
+      "content": "Terraformを使用して、AWS, Azure, Google Cloudにリソースを構築する。クラウドソーリューションの開発",
       "picture": Work
     },
     {
       "period": "2019-2021",
       "where": "大学院の研究",
-      "content": "人の顔情報をカメラから取得して，手を必要としない操作インタフェースアプリの研究を行った",
+      "content": "顔の特徴点情報を使用して，手を使わない操作インタフェースアプリの研究を行った",
       "picture": MasterReserach
     },
     {
@@ -43,12 +43,16 @@ function Home() {
   ]
   const experienceList = experiences.map((experience) =>
     // <div style={{display:"table",border:"1px solid #000000",backgroundColor:"#ffffff"}}>
-    <div key={experience.content} style={{ display: "flex", content: "flex", flexWrap: "wrap", width: "100%", backgroundColor: "#ffffff", margin: "10px", borderRadius: "20px" }}>
-      <div style={{ color: "#75bdff", fontSize: 25 }}>{experience.period}
-        <span style={{ color: "#333333", fontWeight: "bold", fontSize: 20 }}> {experience.where}</span>
-        <p style={{ color: "#333333", fontSize: 20, padding: "10px" }}>{experience.content}</p>
+    <div key={experience.content} style={{ width: "100%", backgroundColor: "#ffffff", margin: "10px", borderRadius: "20px" }}>
+      <div style={{ color: "#75bdff", fontSize: 30 }}>{experience.period}
+        <span style={{ color: "#333333", fontWeight: "bold", fontSize: 25 }}> {experience.where}</span>
+        <div style={{ color: "#333333", justifyContent: 'center', textAlign: 'center' }}>
+          <div style={{ color: "#333333", fontSize: 20, marginBottom: "20px", padding: "10px", justifyContent: 'center', textAlign: 'center' }}>{experience.content}</div>
+          <div><img style={{ width: "50%" }} src={experience.picture} alt={`description of ${experience.content}`} width={'50%'} /></div>
+        </div>
+
       </div>
-      <div><img style={{ width: "50%" }} src={experience.picture} alt={`description of ${experience.content}`} width={'50%'} /></div>
+
     </div>
   );
   return (
@@ -67,7 +71,7 @@ function Home() {
           <div style={{ textAlign: 'center' }}>
           </div>
         </div>}
-        <div style={{ flex: 1, padding: 10 }}>
+        <div style={{ flex: 1, padding: 30, }}>
           {experienceList}
           <br></br>
         </div>
