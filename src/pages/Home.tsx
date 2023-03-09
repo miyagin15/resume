@@ -2,7 +2,7 @@ import Footer from '../style/Footer'
 import Header from '../style/Header'
 import TripleJump from '../Images/TripleJump.jpg'
 import UnivResearch from '../Images/UnivResearch.jpg'
-import Work from '../Images/Work.jpg'
+import Terraform from '../Images/Terraform.png'
 import MasterReserach from '../Images/MasterReserach.jpg'
 import { useMediaQuery } from "react-responsive"
 
@@ -20,7 +20,7 @@ function Home() {
       "period": "2021-",
       "where": "IT通信",
       "content": "Terraformを使用して、AWS, Azure, Google Cloudにリソースを構築する。クラウドソーリューションの開発",
-      "picture": Work
+      "picture": Terraform
     },
     {
       "period": "2019-2021",
