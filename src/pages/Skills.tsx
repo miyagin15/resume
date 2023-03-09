@@ -47,11 +47,6 @@ function Skills() {
       </div>
       <div style={{ flex: 1 }}>
         <h2 id="保有スキル">保有資格</h2>
-        クラウドの資格は<a
-          href="https://www.credly.com/users/ginga-miyata/badges"
-          rel="noreferrer noopener"
-          target="_blank"
-        >credly</a>に掲載済み
         <div style={{ display: "flex", alignItems: "center", flexDirection: "column", listStyle: "disc", paddingLeft: "15px" }}>
           <ul style={{ textAlign: "left" }}>
             {certificationList}
