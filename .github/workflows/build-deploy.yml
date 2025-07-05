@@ -8,6 +8,15 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   build:
     name: Build
@@ -31,20 +40,20 @@ jobs:
     - name: Run tests
       run: yarn run test
 
-    - name: Deploy to gh-pages
+    - name: Setup Pages
+      uses: actions/configure-pages@v4
+
+    - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
-          path: build
+        path: build
   
   deploy:
     needs: build
-    permissions:
-      pages: write
-      id-token: write
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
