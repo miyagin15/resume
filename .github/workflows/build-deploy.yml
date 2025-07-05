@@ -22,12 +22,8 @@ jobs:
       with:
         node-version: 18
         
-    - name: yarn install
-      run: |
-        yarn install --frozen-lockfile --verbose 
-
-    - name: Install NPM packages
-      run: yarn ci
+    - name: Install dependencies
+      run: yarn install --frozen-lockfile
     
     - name: Build project
       run: yarn run build
