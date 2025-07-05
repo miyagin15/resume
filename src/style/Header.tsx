@@ -5,11 +5,9 @@ import Nav from './Nav';
 type Page = 'home' | 'works' | 'skills' | 'about' | 'contact';
 
 interface HeaderProps {
-  currentPage: Page;
-  setCurrentPage: (page: Page) => void;
 }
 
-function Header({ currentPage, setCurrentPage }: HeaderProps) {
+function Header() {
   const { i18n } = useTranslation();
 
   const changeLanguage = (lng: string) => {
@@ -22,14 +20,19 @@ function Header({ currentPage, setCurrentPage }: HeaderProps) {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <button
-              onClick={() => setCurrentPage('home')}
+              onClick={() => {
+                const element = document.getElementById('home');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
               className="text-2xl font-bold text-gray-800 hover:text-primary-600 transition-colors duration-200"
             >
               miyagin15
             </button>
           </div>
           <div className="flex items-center">
-            <Nav currentPage={currentPage} setCurrentPage={setCurrentPage} />
+            <Nav />
             <div className="ml-4">
               <button onClick={() => changeLanguage('en')} className="text-gray-600 hover:text-gray-800">EN</button>
               <span className="mx-1 text-gray-400">|</span>

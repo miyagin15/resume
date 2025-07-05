@@ -6,11 +6,9 @@ import { GiVintageRobot, GiBiceps } from 'react-icons/gi';
 type Page = 'home' | 'works' | 'skills' | 'about' | 'contact';
 
 interface NavProps {
-  currentPage: Page;
-  setCurrentPage: (page: Page) => void;
 }
 
-function Nav({ currentPage, setCurrentPage }: NavProps) {
+function Nav() {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,8 +19,11 @@ function Nav({ currentPage, setCurrentPage }: NavProps) {
     { to: 'contact', icon: <AiOutlineMail className="w-5 h-5" />, label: t('nav.contact') },
   ];
 
-  const handleNavClick = (page: Page) => {
-    setCurrentPage(page);
+  const handleNavClick = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
     setIsOpen(false);
   };
 
@@ -33,12 +34,8 @@ function Nav({ currentPage, setCurrentPage }: NavProps) {
         {navItems.map((item) => (
           <button
             key={item.to}
-            onClick={() => handleNavClick(item.to as Page)}
-            className={`flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
-              currentPage === item.to
-                ? 'text-primary-600 bg-primary-50'
-                : 'text-gray-600 hover:text-primary-600 hover:bg-gray-50'
-            }`}
+            onClick={() => handleNavClick(item.to)}
+            className={`flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 text-gray-600 hover:text-primary-600`}
           >
             {item.icon}
             <span>{item.label}</span>
@@ -66,12 +63,8 @@ function Nav({ currentPage, setCurrentPage }: NavProps) {
           {navItems.map((item) => (
             <button
               key={item.to}
-              onClick={() => handleNavClick(item.to as Page)}
-              className={`flex items-center space-x-3 px-4 py-2 text-sm font-medium transition-colors duration-200 w-full text-left ${
-                currentPage === item.to
-                  ? 'text-primary-600 bg-primary-50'
-                  : 'text-gray-600 hover:text-primary-600 hover:bg-gray-50'
-              }`}
+              onClick={() => handleNavClick(item.to)}
+              className={`flex items-center space-x-3 px-4 py-2 text-sm font-medium transition-colors duration-200 w-full text-left text-gray-600 hover:text-primary-600 hover:bg-gray-50`}
             >
               {item.icon}
               <span>{item.label}</span>

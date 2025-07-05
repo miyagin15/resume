@@ -4,12 +4,9 @@ import { GiVintageRobot, GiBiceps } from 'react-icons/gi'
 
 type Page = 'home' | 'works' | 'skills' | 'about' | 'contact'
 
-interface FooterProps {
-  currentPage: Page
-  setCurrentPage: (page: Page) => void
-}
 
-function Footer({ currentPage, setCurrentPage }: FooterProps) {
+
+function Footer() {
   const navItems = [
     { to: 'home', icon: <AiOutlineHome className="w-4 h-4" />, label: 'Home' },
     { to: 'works', icon: <GiVintageRobot className="w-4 h-4" />, label: 'Works' },
@@ -29,13 +26,14 @@ function Footer({ currentPage, setCurrentPage }: FooterProps) {
           <nav className="flex space-x-6">
             {navItems.map((item) => (
               <button
-                key={item.to}
-                onClick={() => setCurrentPage(item.to as Page)}
-                className={`flex items-center space-x-1 text-sm font-medium transition-colors duration-200 ${
-                  currentPage === item.to
-                    ? 'text-primary-600'
-                    : 'text-gray-600 hover:text-primary-600'
-                }`}
+              key={item.to}
+              onClick={() => {
+                const element = document.getElementById(item.to);
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+              className={`flex items-center space-x-1 text-sm font-medium transition-colors duration-200 text-gray-600 hover:text-primary-600`}
               >
                 {item.icon}
                 <span>{item.label}</span>

@@ -8,7 +8,7 @@ function Works() {
   const employmentList = t('works.employments', { returnObjects: true }) as string[];
 
   return (
-    <div className="section-padding">
+    <div id="works" className="section-padding">
       <div className="text-left mb-12">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
           {t('works.title')}

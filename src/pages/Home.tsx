@@ -16,7 +16,7 @@ function Home() {
   const experiences = t('home.experiences', { returnObjects: true }) as any[];
 
   return (
-    <div className="section-padding">
+    <div id="home" className="section-padding">
       <div className="text-left mb-12">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
           {t('home.title')}
