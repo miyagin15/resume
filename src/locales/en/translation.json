@@ -1,0 +1,117 @@
+{
+  "home": {
+    "title": "About Me",
+    "description": "An SRE engineer with 7+ years of experience in developing web applications, including internships. I value creating meaningful impact for users. I'm interested in exploring the latest technologies and sharing knowledge.",
+    "experiences": [
+      {
+        "period": "2021-",
+        "where": "IT & Telecommunications",
+        "content": "Led infrastructure and server-side development for AI services. Designed and implemented infrastructure as code using Terraform. Achieved 50% reduction in deployment time and handled 50,000+ daily requests."
+      },
+      {
+        "period": "2019-2021",
+        "where": "Graduate School Research",
+        "content": "Researched a hands-free operation interface app using facial feature point information."
+      },
+      {
+        "period": "2015-2019",
+        "where": "University Research",
+        "content": "Researched estimating human movement from sensor data using deep learning."
+      },
+      {
+        "period": "2012-2015",
+        "where": "High School",
+        "content": "Track and field club. Participated in national triple jump competition in 3rd year of high school. Ranked around 30th nationally."
+      }
+    ]
+  },
+  "works": {
+    "title": "Work Experience & Projects",
+    "description": "Introducing my work experience, university projects, and personal development projects.",
+    "employment_title": "Employment Details",
+    "student_title": "University Experience",
+    "hobby_title": "Personal Development & Released Apps",
+    "employments": [
+      "Led infrastructure and server-side development for Azure OpenAI-based ChatGPT service, adopted by 100+ companies",
+      "Successfully migrated 350+ virtual machines from ARM to Terraform, reducing deployment time by 50%",
+      "Developed AI-powered outage detection system achieving 98% accuracy and 30+ minutes earlier detection",
+      "Built AR-based mobile app with 10,000+ downloads and 300% revenue increase in first year",
+      "Experience in designing, building, and operating CI/CD pipelines with GitHub Actions and CircleCI",
+      "Experience in development and operation using container technologies (Docker, Kubernetes)"
+    ],
+    "students": [
+      "Research and development of a non-contact operation interface using facial feature point information.",
+      "Research on estimating human behavior from sensor data using deep learning.",
+      "Experience in academic presentations and paper writing."
+    ],
+    "hobbies": [
+      "Design, development, and release of personal development apps.",
+      "Contribution to OSS activities.",
+      "Writing technical blogs."
+    ]
+  },
+  "skills": {
+    "favorite_tech": "Favorite Technologies",
+    "tech_stack": "Tech Stack",
+    "github_repo": "GitHub Repository",
+    "languages": "Languages",
+    "frameworks_others": "Frameworks & Others",
+    "certifications_title": "Certifications",
+    "favorites": [
+      "Frontend development and design with JavaScript / TypeScript + React.js",
+      "Development with Vue/Nuxt.js",
+      "Data analysis, model development, and inference with Python",
+      "Server-side development with Django"
+    ],
+    "certifications": [
+      "English Speaking (InstaBiz): 150 points",
+      "TOEIC Listening & Reading Test: 815",
+      "Fundamental Information Technology Engineer",
+      "Applied Information Technology Engineer",
+      "Registered Information Security Specialist (provisional)",
+      "Database Specialist",
+      "AWS Certified Cloud Practitioner",
+      "AWS Certified Solutions Architect – Associate",
+      "AWS Certified Developer - Associate",
+      "AWS Certified SysOps Administrator – Associate",
+      "AWS Certified Solutions Architect - Professional",
+      "AWS Certified DevOps Engineer - Professional",
+      "AWS Certified Advanced Networking – Specialty",
+      "AWS Certified Security - Specialty",
+      "AWS Certified Machine Learning - Specialty",
+      "AWS Certified Data Analytics - Specialty",
+      "AWS Certified Database - Specialty",
+      "AWS Certified SAP on AWS - Specialty",
+      "Microsoft Certified: Azure Fundamentals",
+      "Microsoft Certified: Azure Administrator Associate",
+      "Microsoft Azure AI Fundamentals",
+      "Google Associate Cloud Engineer"
+    ]
+  },
+  "contact": {
+    "title": "Contact Me",
+    "description": "Feel free to reach out for collaborations, job opportunities, or any inquiries.",
+    "name_label": "Your Name",
+    "email_label": "Your Email",
+    "message_label": "Your Message",
+    "submit_button": "Send Message",
+    "success_message": "Your message has been sent successfully!",
+    "thank_you": "Thank you for your interest."
+  },
+  "about": {
+    "title": "About",
+    "description": "This page is currently under construction.",
+    "coming_soon": "More details will be available soon.",
+    "nav": {
+      "home": "Home",
+      "works": "Works",
+      "skills": "Skills",
+      "about": "About",
+      "contact": "Contact"
+    }
+  },
+  "language": {
+    "en": "EN",
+    "ja": "JP"
+  }
+}

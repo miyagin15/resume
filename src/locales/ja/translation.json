@@ -1,0 +1,119 @@
+{
+  "home": {
+    "title": "自己紹介",
+    "description": "7年以上のWebアプリケーション開発経験（インターンシップ含む）を持つSREエンジニアです。ユーザーに価値のある影響を与えることを大切にしています。最新技術に触れ、知見を共有することに興味があります。",
+    "experiences": [
+      {
+        "period": "2021-",
+        "where": "IT通信",
+        "content": "AIサービスのインフラストラクチャとサーバーサイド開発をリード。Terraformを使用したInfrastructure as Codeの設計・実装。デプロイメント時間を50%削減し、1日50,000以上のリクエストを処理。"
+      },
+      {
+        "period": "2019-2021",
+        "where": "大学院の研究",
+        "content": "顔の特徴点情報を使用して，手を使わない操作インタフェースアプリの研究を行った"
+      },
+      {
+        "period": "2015-2019",
+        "where": "大学の研究",
+        "content": "深層学習を用いて，センサデータから人の動作を推定する研究を行った"
+      },
+      {
+        "period": "2012-2015",
+        "where": "高校生",
+        "content": "陸上部。高校３年時に三段跳びで全国大会出場。全国30位ぐらい"
+      }
+    ]
+  },
+  "works": {
+    "title": "職務経歴・作品",
+    "description": "職務経験、学生時代の経験、趣味開発の作品をご紹介します",
+    "employment_title": "職務経歴詳細",
+    "student_title": "学生時代の経験",
+    "hobby_title": "趣味開発・リリース済みアプリ",
+    "employments": [
+      "Azure OpenAIベースのChatGPTサービスのインフラストラクチャとサーバーサイド開発をリード、100社以上に採用",
+      "350台以上の仮想マシンをARMからTerraformに移行し、デプロイメント時間を50%削減",
+      "98%の精度と30分以上早い検出を実現するAI駆動の障害検出システムを開発",
+      "10,000ダウンロード以上、初年度に広告収益300%増加を達成したARベースのモバイルアプリを構築",
+      "GitHub ActionsとCircleCIを使用したCI/CDパイプラインの設計、構築、運用の経験",
+      "コンテナ技術（Docker、Kubernetes）を使用した開発・運用の経験"
+    ],
+    "students": [
+      "インターン1社2年 (LineAPI+LinePay+Stripe+Watson+Django+React)",
+      "2020年インターン3社 (Unity,Swift,AWS(ETL処理),Swift)",
+      "2021年インターン3社 (Unity,GCP,React,CloudFormation,CDK)"
+    ],
+    "hobbies": [
+      "AI顔の大きさ診断アプリ (Unity+ncmb+firebase)",
+      "カロリーアプリ (reactNative+gcp)",
+      "ナッツの栄養アプリ (Flutter+firebase)"
+    ]
+  },
+  "skills": {
+    "favorite_tech": "好きな技術",
+    "tech_stack": "技術スタック",
+    "github_repo": "GitHub Repository",
+    "languages": "言語",
+    "frameworks_others": "フレームワーク・その他",
+    "certifications_title": "合格資格",
+    "favorites": [
+      "JavaScript / TypeScript + React.js を用いたフロントエンド開発・設計",
+      "Vue/Nuxt.js を用いた開発",
+      "Python を用いたデータ分析、モデル開発、推論",
+      "Django を用いたサーバーサイド開発"
+    ],
+    "certifications": [
+      "English Speaking (InstaBiz): 150点",
+      "TOEIC Listening & Reading Test: 815点",
+      "基本情報技術者",
+      "応用情報技術者",
+      "情報処理安全確保支援士（暫定）",
+      "データベーススペシャリスト",
+      "AWS Certified Solutions Architect – Associate",
+      "AWS Certified Developer – Associate",
+      "AWS Certified SysOps Administrator – Associate",
+      "AWS Certified DevOps Engineer – Professional",
+      "AWS Certified Security – Specialty",
+      "AWS Certified Advanced Networking – Specialty",
+      "AWS Certified Machine Learning – Specialty",
+      "AWS Certified Data Analytics – Specialty",
+      "AWS Certified Database – Specialty",
+      "AWS Certified SAP on AWS – Specialty",
+      "Microsoft Certified: Azure Security Engineer Associate (AZ-500)",
+      "Microsoft Certified: Azure Developer Associate (AZ-204)",
+      "Designing and Implementing Microsoft DevOps Solutions (AZ-400)",
+      "Microsoft Certified: Azure Virtual Desktop Specialty (AZ-140)",
+      "Microsoft Certified: Azure AI Fundamentals (AI-900)",
+      "Microsoft Certified: Azure AI Engineer Associate (AI-102)",
+      "Microsoft Certified: Azure Data Fundamentals (DP-900)",
+      "Microsoft Certified: Azure Cosmos DB Developer Specialty (DP-420)"
+    ]
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "description": "コラボレーション、仕事の機会、その他のお問い合わせなど、お気軽にご連絡ください。",
+    "name_label": "お名前",
+    "email_label": "メールアドレス",
+    "message_label": "メッセージ",
+    "submit_button": "送信",
+    "success_message": "メッセージが正常に送信されました！",
+    "thank_you": "お問い合わせいただきありがとうございます。"
+  },
+  "about": {
+    "title": "About",
+    "description": "このページは現在準備中です",
+    "coming_soon": "詳細な情報は近日公開予定です。",
+    "nav": {
+      "home": "ホーム",
+      "works": "職務経歴",
+      "skills": "スキル",
+      "about": "About",
+      "contact": "お問い合わせ"
+    }
+  },
+  "language": {
+    "en": "EN",
+    "ja": "JP"
+  }
+}

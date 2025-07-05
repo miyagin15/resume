@@ -1,0 +1,86 @@
+{
+  "home": {
+    "title": "自己紹介",
+    "description": "クラウドエンジニアとしての経験と、研究開発のバックグラウンドを持つ技術者です",
+    "experiences": [
+      {
+        "period": "2021-",
+        "where": "IT通信",
+        "content": "Terraformを使用して、AWS, Azure, Google Cloudにリソースを構築する。クラウドソーリューションの開発"
+      },
+      {
+        "period": "2019-2021",
+        "where": "大学院の研究",
+        "content": "顔の特徴点情報を使用して，手を使わない操作インタフェースアプリの研究を行った"
+      },
+      {
+        "period": "2015-2019",
+        "where": "大学の研究",
+        "content": "深層学習を用いて，センサデータから人の動作を推定する研究を行った"
+      },
+      {
+        "period": "2012-2015",
+        "where": "高校生",
+        "content": "陸上部。高校３年時に三段跳びで全国大会出場。全国30位ぐらい"
+      }
+    ]
+  },
+  "works": {
+    "title": "職務経歴・作品",
+    "description": "職務経験、学生時代の経験、趣味開発の作品をご紹介します",
+    "employment_title": "職務経歴詳細",
+    "student_title": "学生時代の経験",
+    "hobby_title": "趣味開発・リリース済みアプリ",
+    "employments": [
+      "AWS, Azure, Google Cloudなどのクラウド環境でのインフラ構築・運用経験",
+      "Terraformを用いたIaC（Infrastructure as Code）による環境構築・管理",
+      "CI/CDパイプラインの設計・構築・運用経験",
+      "Python, TypeScript, Goなどを用いたWebアプリケーション開発経験",
+      "コンテナ技術（Docker, Kubernetes）を用いた開発・運用経験",
+      "監視・ログ収集（Prometheus, Grafana, ELK Stack）の導入・運用経験"
+    ],
+    "students": [
+      "顔の特徴点情報を用いた非接触型操作インターフェースの研究開発",
+      "深層学習を用いたセンサデータからの行動推定に関する研究",
+      "学会発表、論文執筆経験"
+    ],
+    "hobbies": [
+      "個人開発アプリの設計・開発・リリース",
+      "OSS活動への貢献",
+      "技術ブログの執筆"
+    ]
+  },
+  "skills": {
+    "favorite_tech": "好きな技術",
+    "tech_stack": "技術スタック",
+    "github_repo": "GitHub Repository",
+    "languages": "言語",
+    "frameworks_others": "フレームワーク・その他",
+    "certifications_title": "合格資格",
+    "certifications": [
+      "AWS Certified Solutions Architect – Associate",
+      "AWS Certified Developer – Associate",
+      "AWS Certified SysOps Administrator – Associate",
+      "AWS Certified DevOps Engineer – Professional",
+      "AWS Certified Security – Specialty",
+      "AWS Certified Advanced Networking – Specialty",
+      "AWS Certified Machine Learning – Specialty",
+      "AWS Certified Data Analytics – Specialty",
+      "AWS Certified Database – Specialty",
+      "AWS Certified Cloud Practitioner",
+      "Microsoft Certified: Azure Security Engineer Associate (AZ-500)",
+      "Microsoft Certified: Azure Developer Associate (AZ-204)",
+      "Designing and Implementing Microsoft DevOps Solutions (AZ-400)",
+      "Microsoft Certified: Azure Virtual Desktop Specialty (AZ-140)",
+      "Microsoft Certified: Azure AI Fundamentals (AI-900)",
+      "Microsoft Certified: Azure AI Engineer Associate (AI-102)",
+      "Microsoft Certified: Azure Data Fundamentals (DP-900)",
+      "Microsoft Certified: Azure Cosmos DB Developer Specialty (DP-420)"
+    ]
+  },
+  "about": {
+    "title": "About",
+    "description": "このページは現在準備中です",
+    "coming_soon": "詳細な情報は近日公開予定です。"
+  }
+}
