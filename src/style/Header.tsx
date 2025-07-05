@@ -2,10 +2,9 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Nav from './Nav';
 
-type Page = 'home' | 'works' | 'skills' | 'about' | 'contact';
 
-interface HeaderProps {
-}
+
+
 
 function Header() {
   const { i18n } = useTranslation();

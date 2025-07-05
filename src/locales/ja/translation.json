@@ -1,12 +1,12 @@
 {
   "home": {
     "title": "自己紹介",
-    "description": "クラウドエンジニアとしての経験と、研究開発のバックグラウンドを持つ技術者です",
+    "description": "7年以上のWebアプリケーション開発経験（インターンシップ含む）を持つSREエンジニアです。ユーザーに価値のある影響を与えることを大切にしています。最新技術に触れ、知見を共有することに興味があります。",
     "experiences": [
       {
         "period": "2021-",
         "where": "IT通信",
-        "content": "Terraformを使用して、AWS, Azure, Google Cloudにリソースを構築する。クラウドソーリューションの開発"
+        "content": "AIサービスのインフラストラクチャとサーバーサイド開発をリード。Terraformを使用したInfrastructure as Codeの設計・実装。デプロイメント時間を50%削減し、1日50,000以上のリクエストを処理。"
       },
       {
         "period": "2019-2021",
@@ -32,10 +32,12 @@
     "student_title": "学生時代の経験",
     "hobby_title": "趣味開発・リリース済みアプリ",
     "employments": [
-      "2022上半期 (CDK+AWS+Lambda+Python+CirclCI)",
-      "2022下半期 (Terraform+Azure+CircleCI+Bash)",
-      "2021上半期 (Terraform+AWS+Azure+python)",
-      "2021下半期 (python+NoSQL+Azure+AWS+深層学習)"
+      "Azure OpenAIベースのChatGPTサービスのインフラストラクチャとサーバーサイド開発をリード、100社以上に採用",
+      "350台以上の仮想マシンをARMからTerraformに移行し、デプロイメント時間を50%削減",
+      "98%の精度と30分以上早い検出を実現するAI駆動の障害検出システムを開発",
+      "10,000ダウンロード以上、初年度に広告収益300%増加を達成したARベースのモバイルアプリを構築",
+      "GitHub ActionsとCircleCIを使用したCI/CDパイプラインの設計、構築、運用の経験",
+      "コンテナ技術（Docker、Kubernetes）を使用した開発・運用の経験"
     ],
     "students": [
       "インターン1社2年 (LineAPI+LinePay+Stripe+Watson+Django+React)",
@@ -109,5 +111,9 @@
       "about": "About",
       "contact": "お問い合わせ"
     }
+  },
+  "language": {
+    "en": "EN",
+    "ja": "JP"
   }
 }

@@ -21,7 +21,7 @@ function Home() {
         <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
           {t('home.title')}
         </h1>
-        <p className="text-lg text-gray-600 max-w-2xl">
+        <p className="text-lg text-gray-600 leading-relaxed">
           {t('home.description')}
         </p>
       </div>
@@ -50,7 +50,7 @@ function Home() {
                 <img 
                   src={experienceImages[index]} 
                   alt={experience.where}
-                  className="w-full h-48 object-cover rounded-lg shadow-md"
+                  className="w-full max-h-64 object-contain rounded-lg shadow-md"
                 />
               </div>
             </div>

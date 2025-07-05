@@ -3,20 +3,19 @@ import { useTranslation } from 'react-i18next';
 import { AiOutlineHome, AiOutlineMenu, AiOutlineClose, AiOutlineMail } from 'react-icons/ai';
 import { GiVintageRobot, GiBiceps } from 'react-icons/gi';
 
-type Page = 'home' | 'works' | 'skills' | 'about' | 'contact';
 
-interface NavProps {
-}
+
+
 
 function Nav() {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { to: 'home', icon: <AiOutlineHome className="w-5 h-5" />, label: t('nav.home') },
-    { to: 'works', icon: <GiVintageRobot className="w-5 h-5" />, label: t('nav.works') },
-    { to: 'skills', icon: <GiBiceps className="w-5 h-5" />, label: t('nav.skills') },
-    { to: 'contact', icon: <AiOutlineMail className="w-5 h-5" />, label: t('nav.contact') },
+    { to: 'home', icon: <AiOutlineHome className="w-5 h-5" />, label: t('about.nav.home') },
+    { to: 'works', icon: <GiVintageRobot className="w-5 h-5" />, label: t('about.nav.works') },
+    { to: 'skills', icon: <GiBiceps className="w-5 h-5" />, label: t('about.nav.skills') },
+    { to: 'contact', icon: <AiOutlineMail className="w-5 h-5" />, label: t('about.nav.contact') },
   ];
 
   const handleNavClick = (id: string) => {

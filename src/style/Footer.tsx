@@ -1,17 +1,19 @@
 import React from 'react'
 import { AiOutlineHome, AiOutlineMail } from 'react-icons/ai'
 import { GiVintageRobot, GiBiceps } from 'react-icons/gi'
+import { useTranslation } from 'react-i18next';
 
-type Page = 'home' | 'works' | 'skills' | 'about' | 'contact'
+
 
 
 
 function Footer() {
+  const { t } = useTranslation();
   const navItems = [
-    { to: 'home', icon: <AiOutlineHome className="w-4 h-4" />, label: 'Home' },
-    { to: 'works', icon: <GiVintageRobot className="w-4 h-4" />, label: 'Works' },
-    { to: 'skills', icon: <GiBiceps className="w-4 h-4" />, label: 'Skills' },
-    { to: 'contact', icon: <AiOutlineMail className="w-4 h-4" />, label: 'Contact' },
+    { to: 'home', icon: <AiOutlineHome className="w-4 h-4" />, label: t('about.nav.home') },
+    { to: 'works', icon: <GiVintageRobot className="w-4 h-4" />, label: t('about.nav.works') },
+    { to: 'skills', icon: <GiBiceps className="w-4 h-4" />, label: t('about.nav.skills') },
+    { to: 'contact', icon: <AiOutlineMail className="w-4 h-4" />, label: t('about.nav.contact') },
   ]
 
   return (
