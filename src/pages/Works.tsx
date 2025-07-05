@@ -1,43 +1,62 @@
-import Footer from '../style/Footer'
-import Header from '../style/Header'
-import works from '../data/works.json'
+import { useTranslation } from 'react-i18next';
 
 function Works() {
-  const hobbyList = works.hobbies.map((hobby) =>
-    <li>{hobby}</li>
-  );
-  const studentList = works.students.map((student) =>
-    <li>{student}</li>
-  );
-  const employmentList = works.employments.map((employment) =>
-    <li>{employment}</li>
-  );
+  const { t } = useTranslation();
+
+  const hobbyList = t('works.hobbies', { returnObjects: true }) as string[];
+  const studentList = t('works.students', { returnObjects: true }) as string[];
+  const employmentList = t('works.employments', { returnObjects: true }) as string[];
+
   return (
-    <div style={{ textAlign: "center", justifyContent: "center", backgroundColor: "#f5f5ff" }}>
-      <Header />
-      <div >
-        <h2 id="保有スキル">職務経歴詳細</h2>
-        <div style={{ display: "flex", alignItems: "center", flexDirection: "column", listStyle: "disc", paddingLeft: "5px" }}>
-          <ul style={{ textAlign: "left" }}>
-            {employmentList}
+    <div className="section-padding">
+      <div className="text-left mb-12">
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          {t('works.title')}
+        </h1>
+        <p className="text-lg text-gray-600 max-w-2xl">
+          {t('works.description')}
+        </p>
+      </div>
+
+      <div className="grid gap-8 md:grid-cols-1 lg:grid-cols-3">
+        {/* 職務経歴詳細 */}
+        <div className="card p-6">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 text-left">
+            {t('works.employment_title')}
+          </h2>
+          <ul className="list-disc list-inside space-y-2">
+            {employmentList.map((item, index) => (
+              <li key={index} className="text-gray-700 mb-2">{item}</li>
+            ))}
           </ul>
         </div>
-        <h2 id="保有スキル">学生時代の経験</h2>
-        <div style={{ display: "flex", alignItems: "center", flexDirection: "column", listStyle: "disc", paddingLeft: "5px" }}>
-          <ul style={{ textAlign: "left" }}>
-            {studentList}
+
+        {/* 学生時代の経験 */}
+        <div className="card p-6">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 text-left">
+            {t('works.student_title')}
+          </h2>
+          <ul className="list-disc list-inside space-y-2">
+            {studentList.map((item, index) => (
+              <li key={index} className="text-gray-700 mb-2">{item}</li>
+            ))}
           </ul>
         </div>
-        <h2 id="保有スキル">趣味開発。リリース済みアプリ</h2>
-        <div style={{ display: "flex", alignItems: "center", flexDirection: "column", listStyle: "disc", paddingLeft: "5px" }}>
-          <ul style={{ textAlign: "left" }}>
-            {hobbyList}
+
+        {/* 趣味開発 */}
+        <div className="card p-6">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 text-left">
+            {t('works.hobby_title')}
+          </h2>
+          <ul className="list-disc list-inside space-y-2">
+            {hobbyList.map((item, index) => (
+              <li key={index} className="text-gray-700 mb-2">{item}</li>
+            ))}
           </ul>
         </div>
       </div>
-      <Footer />
     </div>
-  )
+  );
 }
 
-export default Works
+export default Works;

@@ -1,73 +1,50 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { AiOutlineHome, AiOutlineMail } from 'react-icons/ai'
+import { GiVintageRobot, GiBiceps } from 'react-icons/gi'
 
-function Footer() {
-  const fontSize = 25
-  const padding = 20
-  const selectionColor = 'yellow'
+type Page = 'home' | 'works' | 'skills' | 'about' | 'contact'
+
+interface FooterProps {
+  currentPage: Page
+  setCurrentPage: (page: Page) => void
+}
+
+function Footer({ currentPage, setCurrentPage }: FooterProps) {
+  const navItems = [
+    { to: 'home', icon: <AiOutlineHome className="w-4 h-4" />, label: 'Home' },
+    { to: 'works', icon: <GiVintageRobot className="w-4 h-4" />, label: 'Works' },
+    { to: 'skills', icon: <GiBiceps className="w-4 h-4" />, label: 'Skills' },
+    { to: 'contact', icon: <AiOutlineMail className="w-4 h-4" />, label: 'Contact' },
+  ]
+
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        background: '#666',
-      }}
-    >
-      <div>
-        <footer style={{ height: 50, background: '#666', color: '#fff' }}>
-          <nav
-            style={{
-              background: '#666',
-              margin: 0,
-            }}
-          >
-            <ul
-              style={{
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                listStyle: 'none',
-                margin: 0,
-              }}
-            >
-              <li style={{ padding: padding, fontSize: fontSize }}>
-                <NavLink
-                  to="/"
-                  exact
-                  style={{ color: '#fff', textDecoration: 'none' }}
-                  activeStyle={{ color: selectionColor }}
-                >
-                  Home
-                </NavLink>
-              </li>
-              <li style={{ padding: padding, fontSize: fontSize }}>
-                <NavLink
-                  to="/works"
-                  style={{ color: '#fff', textDecoration: 'none' }}
-                  activeStyle={{ color: selectionColor }}
-                >
-                  Works
-                </NavLink>
-              </li>
-              <li style={{ padding: padding, fontSize: fontSize }}>
-                <NavLink
-                  to="/skills"
-                  style={{ color: '#fff', textDecoration: 'none' }}
-                  activeStyle={{ color: selectionColor }}
-                >
-                  Skills
-                </NavLink>
-              </li>
-            </ul>
+    <footer className="bg-white border-t border-gray-200 mt-auto">
+      <div className="max-w-1xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="text-left md:text-left">
+            <p className="text-lg font-semibold text-gray-800">miyagin15</p>
+            <p className="text-sm text-gray-600">Built with React & Tailwind CSS</p>
+          </div>
+          
+          <nav className="flex space-x-6">
+            {navItems.map((item) => (
+              <button
+                key={item.to}
+                onClick={() => setCurrentPage(item.to as Page)}
+                className={`flex items-center space-x-1 text-sm font-medium transition-colors duration-200 ${
+                  currentPage === item.to
+                    ? 'text-primary-600'
+                    : 'text-gray-600 hover:text-primary-600'
+                }`}
+              >
+                {item.icon}
+                <span>{item.label}</span>
+              </button>
+            ))}
           </nav>
-        </footer>
-        <div style={{ textAlign: 'center' }}>
-          <p>miyagin15</p>
-          <p>Copyright Ginga miyata. All Rights Reserved.</p>
         </div>
       </div>
-    </div>
+    </footer>
   )
 }
 

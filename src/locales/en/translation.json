@@ -1,0 +1,113 @@
+{
+  "home": {
+    "title": "About Me",
+    "description": "A cloud engineer with experience and a background in research and development.",
+    "experiences": [
+      {
+        "period": "2021-",
+        "where": "IT & Telecommunications",
+        "content": "Building resources on AWS, Azure, and Google Cloud using Terraform. Developing cloud solutions."
+      },
+      {
+        "period": "2019-2021",
+        "where": "Graduate School Research",
+        "content": "Researched a hands-free operation interface app using facial feature point information."
+      },
+      {
+        "period": "2015-2019",
+        "where": "University Research",
+        "content": "Researched estimating human movement from sensor data using deep learning."
+      },
+      {
+        "period": "2012-2015",
+        "where": "High School",
+        "content": "Track and field club. Participated in national triple jump competition in 3rd year of high school. Ranked around 30th nationally."
+      }
+    ]
+  },
+  "works": {
+    "title": "Work Experience & Projects",
+    "description": "Introducing my work experience, university projects, and personal development projects.",
+    "employment_title": "Employment Details",
+    "student_title": "University Experience",
+    "hobby_title": "Personal Development & Released Apps",
+    "employments": [
+      "Experience in building and operating infrastructure in cloud environments such as AWS, Azure, and Google Cloud.",
+      "Experience in building and managing environments using IaC (Infrastructure as Code) with Terraform.",
+      "Experience in designing, building, and operating CI/CD pipelines.",
+      "Experience in web application development using Python, TypeScript, Go, etc.",
+      "Experience in development and operation using container technologies (Docker, Kubernetes).",
+      "Experience in introducing and operating monitoring and log collection (Prometheus, Grafana, ELK Stack)."
+    ],
+    "students": [
+      "Research and development of a non-contact operation interface using facial feature point information.",
+      "Research on estimating human behavior from sensor data using deep learning.",
+      "Experience in academic presentations and paper writing."
+    ],
+    "hobbies": [
+      "Design, development, and release of personal development apps.",
+      "Contribution to OSS activities.",
+      "Writing technical blogs."
+    ]
+  },
+  "skills": {
+    "favorite_tech": "Favorite Technologies",
+    "tech_stack": "Tech Stack",
+    "github_repo": "GitHub Repository",
+    "languages": "Languages",
+    "frameworks_others": "Frameworks & Others",
+    "certifications_title": "Certifications",
+    "favorites": [
+      "Frontend development and design with JavaScript / TypeScript + React.js",
+      "Development with Vue/Nuxt.js",
+      "Data analysis, model development, and inference with Python",
+      "Server-side development with Django"
+    ],
+    "certifications": [
+      "English Speaking (InstaBiz): 150 points",
+      "TOEIC Listening & Reading Test: 815",
+      "Fundamental Information Technology Engineer",
+      "Applied Information Technology Engineer",
+      "Registered Information Security Specialist (provisional)",
+      "Database Specialist",
+      "AWS Certified Cloud Practitioner",
+      "AWS Certified Solutions Architect – Associate",
+      "AWS Certified Developer - Associate",
+      "AWS Certified SysOps Administrator – Associate",
+      "AWS Certified Solutions Architect - Professional",
+      "AWS Certified DevOps Engineer - Professional",
+      "AWS Certified Advanced Networking – Specialty",
+      "AWS Certified Security - Specialty",
+      "AWS Certified Machine Learning - Specialty",
+      "AWS Certified Data Analytics - Specialty",
+      "AWS Certified Database - Specialty",
+      "AWS Certified SAP on AWS - Specialty",
+      "Microsoft Certified: Azure Fundamentals",
+      "Microsoft Certified: Azure Administrator Associate",
+      "Microsoft Azure AI Fundamentals",
+      "Google Associate Cloud Engineer"
+    ]
+  },
+  "contact": {
+    "title": "Contact Me",
+    "description": "Feel free to reach out for collaborations, job opportunities, or any inquiries.",
+    "name_label": "Your Name",
+    "email_label": "Your Email",
+    "message_label": "Your Message",
+    "submit_button": "Send Message",
+    "success_message": "Your message has been sent successfully!",
+    "thank_you": "Thank you for your interest."
+  },
+  "about": {
+    "title": "About",
+    "description": "This page is currently under construction.",
+    "coming_soon": "More details will be available soon.",
+    "nav": {
+      "home": "Home",
+      "works": "Works",
+      "skills": "Skills",
+      "about": "About",
+      "contact": "Contact"
+    }
+  }
+}

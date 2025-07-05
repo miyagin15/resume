@@ -1,73 +1,86 @@
-import React from 'react'
-import { NavLink} from 'react-router-dom'
-import { AiOutlineHome } from 'react-icons/ai'
-import { GiVintageRobot, GiBiceps } from 'react-icons/gi'
-import { useMediaQuery } from "react-responsive"
+import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { AiOutlineHome, AiOutlineMenu, AiOutlineClose, AiOutlineMail } from 'react-icons/ai';
+import { GiVintageRobot, GiBiceps } from 'react-icons/gi';
 
-function Nav() {
-  const isMobileScreen: boolean = useMediaQuery({ query: '(max-width: 560px)'})
-  const fontSize = isMobileScreen ? 10 : 45;
-  const padding = 10
-  const selectionColor = 'yellow'
-  return (
-    <nav
-      style={{
-        background: '#666',
-        margin: 0,
-        borderBottomWidth: 10,
-      }}
-    >
-      <ul
-        style={{
-          display: 'flex',
-          justifyContent: 'flex-end',
-          alignItems: 'flex-start',
-          listStyle: 'none',
-          margin: 0,
-        }}
-      >
-        <li
-          style={{
-            padding: padding,
-            fontSize: fontSize,
-          }}
-        >
+type Page = 'home' | 'works' | 'skills' | 'about' | 'contact';
 
-          <AiOutlineHome />
-
-          <NavLink
-            to="/"
-            exact
-            style={{ color: '#fff', textDecoration: 'none' }}
-            activeStyle={{ color: selectionColor }}
-          >
-            Home
-          </NavLink>
-        </li>
-        <li style={{ padding: padding, fontSize: fontSize }}>
-          <GiVintageRobot />
-
-          <NavLink
-            to="/works"
-            style={{ color: '#fff', textDecoration: 'none' }}
-            activeStyle={{ color: selectionColor }}
-          >
-            Works
-          </NavLink>
-        </li>
-        <li style={{ padding: padding, fontSize: fontSize }}>
-          <GiBiceps />
-          <NavLink
-            to="/skills"
-            style={{ color: '#fff', textDecoration: 'none' }}
-            activeStyle={{ color: selectionColor }}
-          >
-            Skills
-          </NavLink>
-        </li>
-      </ul>
-    </nav>
-  )
+interface NavProps {
+  currentPage: Page;
+  setCurrentPage: (page: Page) => void;
 }
 
-export default Nav
+function Nav({ currentPage, setCurrentPage }: NavProps) {
+  const { t } = useTranslation();
+  const [isOpen, setIsOpen] = useState(false);
+
+  const navItems = [
+    { to: 'home', icon: <AiOutlineHome className="w-5 h-5" />, label: t('nav.home') },
+    { to: 'works', icon: <GiVintageRobot className="w-5 h-5" />, label: t('nav.works') },
+    { to: 'skills', icon: <GiBiceps className="w-5 h-5" />, label: t('nav.skills') },
+    { to: 'contact', icon: <AiOutlineMail className="w-5 h-5" />, label: t('nav.contact') },
+  ];
+
+  const handleNavClick = (page: Page) => {
+    setCurrentPage(page);
+    setIsOpen(false);
+  };
+
+  return (
+    <nav className="relative">
+      {/* Desktop Navigation */}
+      <div className="hidden md:flex space-x-8">
+        {navItems.map((item) => (
+          <button
+            key={item.to}
+            onClick={() => handleNavClick(item.to as Page)}
+            className={`flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+              currentPage === item.to
+                ? 'text-primary-600 bg-primary-50'
+                : 'text-gray-600 hover:text-primary-600 hover:bg-gray-50'
+            }`}
+          >
+            {item.icon}
+            <span>{item.label}</span>
+          </button>
+        ))}
+      </div>
+
+      {/* Mobile menu button */}
+      <div className="md:hidden">
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="text-gray-600 hover:text-primary-600 focus:outline-none focus:text-primary-600"
+        >
+          {isOpen ? (
+            <AiOutlineClose className="w-6 h-6" />
+          ) : (
+            <AiOutlineMenu className="w-6 h-6" />
+          )}
+        </button>
+      </div>
+
+      {/* Mobile Navigation */}
+      {isOpen && (
+        <div className="absolute top-full right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-200">
+          {navItems.map((item) => (
+            <button
+              key={item.to}
+              onClick={() => handleNavClick(item.to as Page)}
+              className={`flex items-center space-x-3 px-4 py-2 text-sm font-medium transition-colors duration-200 w-full text-left ${
+                currentPage === item.to
+                  ? 'text-primary-600 bg-primary-50'
+                  : 'text-gray-600 hover:text-primary-600 hover:bg-gray-50'
+              }`}
+            >
+              {item.icon}
+              <span>{item.label}</span>
+            </button>
+          ))}
+        </div>
+      )}
+    </nav>
+  );
+}
+
+export default Nav;
