@@ -5,24 +5,19 @@
     "cta": "仕事を依頼する",
     "experiences": [
       {
-        "period": "2021-現在",
-        "where": "IT通信",
-        "content": "AIサービスのインフラストラクチャとサーバーサイド開発をリード。Terraformを使用したInfrastructure as Codeの設計・実装。デプロイメント時間を50%削減し、1日50,000以上のリクエストを処理。"
-      },
-      {
         "period": "2019-2021",
         "where": "大学院の研究",
-        "content": "顔の特徴点情報を使用して，手を使わない操作インタフェースアプリの研究を行った"
+        "content": "顔の特徴点情報を使用したハンズフリー操作インタフェースの研究。機械工学修士。"
       },
       {
         "period": "2015-2019",
         "where": "大学の研究",
-        "content": "深層学習を用いて，センサデータから人の動作を推定する研究を行った"
+        "content": "深層学習を用いたセンサデータからの動作予測AIモデルの研究。GPA 3.2/4。"
       },
       {
         "period": "2012-2015",
         "where": "高校生",
-        "content": "陸上部。高校３年時に三段跳びで全国大会出場。全国30位ぐらい"
+        "content": "陸上部。高校3年時に三段跳びで全国大会出場。全国30位。"
       }
     ]
   },
@@ -32,17 +27,17 @@
     "items": [
       {
         "title": "Webアプリケーション開発",
-        "description": "React, TypeScript, Pythonなどの最新技術を使用したフルスタック開発。レスポンシブで高速、SEOに最適化されたWebアプリを構築します。",
+        "description": "React, TypeScript, Vue/Nuxt, Pythonなどの最新技術を使用したフルスタック開発。レスポンシブで高速、SEOに最適化されたWebアプリを構築します。",
         "icon": "code"
       },
       {
         "title": "クラウドインフラ (SRE)",
-        "description": "AWSやAzure上でのスケーラブルなクラウドインフラの設計・管理。アプリケーションの信頼性、セキュリティ、コスト効率を保証します。",
+        "description": "AWS, Azure, GCP上でのスケーラブルなクラウドインフラの設計・管理。Terraformによる IaC、CI/CD構築、可用性99.9%を実現します。",
         "icon": "cloud"
       },
       {
         "title": "技術コンサルティング",
-        "description": "技術スタックの選定、アーキテクチャ設計、開発プロセスに関する専門的なアドバイス。情報に基づいた技術的な意思決定を支援します。",
+        "description": "技術スタックの選定、アーキテクチャ設計、開発プロセスに関する専門的なアドバイス。生成AI導入支援も対応可能です。",
         "icon": "consulting"
       }
     ]
@@ -52,45 +47,59 @@
     "description": "実際の問題解決における専門知識を示すプロジェクト事例。",
     "items": [
       {
-        "title": "ChatGPTサービス基盤構築",
+        "title": "生成AI Webアプリケーション基盤構築",
         "category": "SRE / Backend",
-        "challenge": "高トラフィックが予想される新規AIサービスのために、スケーラブルでセキュアなインフラが必要だった。",
-        "solution": "Azure OpenAIとTerraformを使用したサーバーレスアーキテクチャを設計し、自動プロビジョニングを実現。",
-        "result": "100社以上の企業クライアントと1日5万件以上のリクエストを99.9%の稼働率で処理することに成功。"
+        "challenge": "大企業向けにセキュアなChatGPT代替サービスが必要。高トラフィックに対応できるスケーラブルな基盤が求められた。",
+        "solution": "Azure OpenAIを活用したWebアプリのインフラ設計・IaC実装・CI/CD構築。Tokenizer最適化とRAG自動評価CI環境を構築。",
+        "result": "100社以上に導入。1社で日次3,000人超のアクティブユーザー、1日50,000件以上のリクエスト処理。応答待機時間を30秒から1秒未満に短縮。"
       },
       {
-        "title": "クラウド移行と最適化",
+        "title": "ARM TemplateからTerraformへの移行",
         "category": "DevOps",
-        "challenge": "レガシーなインフラは手動運用でエラーが発生しやすく、デプロイも遅かった。",
-        "solution": "350台以上のVMをInfrastructure as Code (Terraform) に移行し、CI/CDパイプラインを実装。",
-        "result": "デプロイ時間を50%削減し、手動設定によるエラーを排除。"
+        "challenge": "Azure環境のみARM Template利用で運用工数増大、スキル習得負担が課題だった。",
+        "solution": "5名チームをリードし、VM・AVDのデプロイをTerraform化。GitHub Push で apply を自動実行可能なCI/CD環境を構築。",
+        "result": "GitHub Pushで350台以上のVMをデプロイ可能に。手作業比で50%の時間削減。"
       },
       {
         "title": "AI障害検知システム",
         "category": "AI / ML",
-        "challenge": "手動監視では微細なシステムの異常を見逃し、インシデント対応が遅れていた。",
-        "solution": "深層学習モデルを使用したAI駆動の検知システムを開発。",
-        "result": "98%の精度を達成し、以前より30分以上早くインシデントを検知可能に。"
+        "challenge": "AWS/Azureの公式障害情報は遅延することがあり、より早期に検知する仕組みが必要だった。",
+        "solution": "SNSデータを活用した機械学習ベースの障害検知システムを開発。モデル設計・学習・推論システムを実装。",
+        "result": "公式情報より30分以上早く検知可能。精度98%達成。第1発明者として特許取得。"
+      },
+      {
+        "title": "AR顔測定Androidアプリ開発",
+        "category": "Mobile / 個人開発",
+        "challenge": "顔の表面積を測定するニーズに対応したモバイルアプリが存在しなかった。",
+        "solution": "Unity (C#) でARベースのモバイルアプリを設計・開発。仕様策定からリリース、運用まで単独で担当。",
+        "result": "Play ストアで10,000回以上ダウンロード。広告収入を3倍に拡大。"
       }
     ]
   },
   "skills": {
-    "favorite_tech": "好きな技術",
+    "favorite_tech": "技術スタック",
     "tech_stack": "技術スタック",
     "github_repo": "GitHub Repository",
     "languages": "言語",
     "frameworks_others": "フレームワーク・その他",
     "certifications_title": "合格資格",
     "favorites": [
-      "JavaScript / TypeScript + React.js を用いたフロントエンド開発・設計",
-      "Vue/Nuxt.js を用いた開発",
-      "Python を用いたデータ分析、モデル開発、推論",
-      "Django を用いたサーバーサイド開発"
+      "Python (Django, Flask, FastAPI, FastText) - 6年",
+      "TypeScript (Vue3/Nuxt3, React) - 4年",
+      "Terraform - 4年",
+      "C# (Unity) - 6年",
+      "Shell - 2年"
+    ],
+    "awards": [
+      "Japan AWS Jr. Champions",
+      "AWS All Certifications (全12資格取得)",
+      "2024 Microsoft Top Partner Engineer Award (AI部門)",
+      "第1発明者として特許取得",
+      "Techイベント登壇 (生成AI, 障害検知)",
+      "技術ブログ執筆 (Token, Terraform, AWS CDK等)"
     ],
     "certifications": [
-      "TOEIC Listening & Reading Test: 905点",
-      "基本情報技術者",
-      "応用情報技術者",
+      "TOEIC L&R 905点 / Speaking 130点 / Writing 170点",
       "情報処理安全確保支援士",
       "データベーススペシャリスト",
       "CKA: Certified Kubernetes Administrator",
@@ -115,12 +124,12 @@
       "Google Cloud Professional Machine Learning Engineer",
       "Google Cloud Professional Cloud Database Engineer",
       "Google Cloud Associate Cloud Engineer",
+      "Microsoft Certified: Solutions Architect Expert",
+      "Microsoft Certified: DevOps Engineer Expert",
+      "Microsoft Certified: AI Engineer Associate",
+      "Microsoft Certified: Azure Cosmos DB Developer Specialty",
       "Microsoft Certified: Azure Administrator Associate",
-      "Microsoft Certified: Azure Developer Associate",
-      "Microsoft Certified: Azure Virtual Desktop Specialty",
-      "Microsoft Certified: Azure Fundamentals",
-      "Microsoft Certified: Azure AI Fundamentals",
-      "Microsoft Certified: Azure Data Fundamentals"
+      "Microsoft Certified: Azure Developer Associate"
     ]
   },
   "contact": {

@@ -175,7 +175,22 @@ function Skills() {
         </div>
       </div>
 
-      {/* Favorite Technologies */}
+      {/* Awards & Achievements */}
+      <div className="max-w-4xl mx-auto mt-16">
+        <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-6 text-center">🏆 Awards & Achievements</h3>
+        <div className="bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-gray-800 dark:to-gray-800 p-6 rounded-xl border border-yellow-200 dark:border-gray-700">
+          <ul className="grid md:grid-cols-2 gap-3">
+            {(t('skills.awards', { returnObjects: true }) as string[]).map((award, i) => (
+              <li key={i} className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
+                <span className="w-2 h-2 bg-yellow-500 rounded-full"></span>
+                {award}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      {/* Tech Stack */}
       <div className="max-w-4xl mx-auto mt-16">
         <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-6 text-center">{t('skills.favorite_tech')}</h3>
         <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700">

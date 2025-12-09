@@ -5,92 +5,116 @@
     "cta": "Hire Me",
     "experiences": [
       {
-        "period": "2021-Present",
-        "where": "IT & Telecommunications",
-        "content": "Led infrastructure and server-side development for AI services. Designed and implemented infrastructure as code using Terraform. Achieved 50% reduction in deployment time and handled 50,000+ daily requests."
-      },
-      {
         "period": "2019-2021",
-        "where": "Graduate School Research",
-        "content": "Researched a hands-free operation interface app using facial feature point information."
+        "where": "Graduate Research",
+        "content": "Developed hands-free operation interface using facial landmark detection. Master's in Mechanical Engineering."
       },
       {
         "period": "2015-2019",
         "where": "University Research",
-        "content": "Researched estimating human movement from sensor data using deep learning."
+        "content": "Created motion prediction AI models from sensor data using deep learning. GPA 3.2/4."
       },
       {
         "period": "2012-2015",
         "where": "High School",
-        "content": "Track and field club. Participated in national triple jump competition in 3rd year of high school. Ranked around 30th nationally."
+        "content": "Track & Field. National competition in Triple Jump (Top 30 in Japan)."
       }
     ]
   },
   "services": {
-    "title": "My Services",
-    "description": "I offer a range of technical services to help you achieve your business goals.",
+    "title": "Services",
+    "description": "Technical services to help your business achieve its goals.",
     "items": [
       {
         "title": "Web Application Development",
-        "description": "Full-stack development using modern technologies like React, TypeScript, and Python. I build responsive, fast, and SEO-friendly web apps.",
+        "description": "Full-stack development using React, TypeScript, Vue/Nuxt, and Python. Building responsive, fast, and SEO-optimized web applications.",
         "icon": "code"
       },
       {
         "title": "Cloud Infrastructure (SRE)",
-        "description": "Design and management of scalable cloud infrastructure on AWS and Azure. I ensure your applications are reliable, secure, and cost-effective.",
+        "description": "Design and management of scalable cloud infrastructure on AWS, Azure, and GCP. IaC with Terraform, CI/CD setup, achieving 99.9% availability.",
         "icon": "cloud"
       },
       {
         "title": "Technical Consulting",
-        "description": "Expert advice on technology stack selection, architecture design, and development processes. I help you make informed technical decisions.",
+        "description": "Expert advice on technology stack selection, architecture design, and development processes. GenAI adoption support also available.",
         "icon": "consulting"
       }
     ]
   },
   "works": {
-    "title": "Selected Works",
-    "description": "A collection of projects demonstrating my expertise in solving real-world problems.",
+    "title": "Case Studies",
+    "description": "Real-world projects demonstrating expertise in problem-solving.",
     "items": [
       {
-        "title": "ChatGPT Service Infrastructure",
+        "title": "Multi-SaaS Platform Common Infrastructure",
+        "category": "SRE / Infrastructure",
+        "challenge": "Needed a common infrastructure to release multiple SaaS products quickly while maintaining development efficiency and quality.",
+        "solution": "Standardized non-functional requirements (logging, monitoring, backup) with Terraform. Implemented unified tenant management with Observability Access Manager.",
+        "result": "Significantly improved operational efficiency and observability. Established reusable architecture across products."
+      },
+      {
+        "title": "GenAI Multi-Cloud Infrastructure Design",
+        "category": "SRE / Cloud",
+        "challenge": "Required secure communication between Azure and AWS with enterprise-level availability and operational control.",
+        "solution": "Designed Azure-AWS VPN with AZ-redundant configuration. Implemented IaC with Terraform for consistent multi-environment deployment.",
+        "result": "Achieved 99.9% availability between AWS-Azure. Expanded Azure OpenAI token limits 10x+, eliminating 429 errors."
+      },
+      {
+        "title": "Enterprise ChatGPT Platform",
         "category": "SRE / Backend",
-        "challenge": "Needed a scalable and secure infrastructure for a new AI service expected to handle high traffic.",
-        "solution": "Designed a serverless architecture using Azure OpenAI and Terraform for automated provisioning.",
-        "result": "Successfully handled 100+ enterprise clients and 50k+ daily requests with 99.9% uptime."
+        "challenge": "Enterprise clients needed secure ChatGPT alternative with high-traffic scalability.",
+        "solution": "Designed infrastructure with Azure OpenAI, IaC implementation, CI/CD. Optimized Tokenizer and built RAG auto-evaluation CI.",
+        "result": "Deployed to 100+ companies. 3,000+ daily active users per client, 50,000+ requests/day. Reduced response wait from 30s to <1s."
       },
       {
-        "title": "Cloud Migration & Optimization",
+        "title": "ARM Template to Terraform Migration",
         "category": "DevOps",
-        "challenge": "Legacy infrastructure was manual, error-prone, and slow to deploy.",
-        "solution": "Migrated 350+ VMs to Infrastructure as Code (Terraform) and implemented CI/CD pipelines.",
-        "result": "Reduced deployment time by 50% and eliminated manual configuration errors."
+        "challenge": "Azure using ARM Template increased operational overhead and learning curve vs. Terraform for AWS/GCP.",
+        "solution": "Led 5-person team to migrate VM/AVD deployments to Terraform. Built CI/CD for automated apply on GitHub push.",
+        "result": "Enabled deployment of 350+ VMs via GitHub Push. Reduced manual work by 50%."
       },
       {
-        "title": "AI Outage Detection System",
+        "title": "AI Incident Detection System",
         "category": "AI / ML",
-        "challenge": "Manual monitoring missed subtle system anomalies, leading to delayed incident response.",
-        "solution": "Developed an AI-powered detection system using deep learning models.",
-        "result": "Achieved 98% accuracy and detected incidents 30+ minutes earlier than before."
+        "challenge": "Official AWS/Azure incident notifications were often delayed; needed earlier detection mechanism.",
+        "solution": "Developed ML-based detection system using social media data. Implemented model training and inference pipeline.",
+        "result": "Detected incidents 30+ minutes before official announcements. Achieved 98% accuracy. Obtained patent as primary inventor."
+      },
+      {
+        "title": "AR Face Measurement Android App",
+        "category": "Mobile / Personal",
+        "challenge": "No mobile app existed for measuring facial surface area.",
+        "solution": "Designed and developed AR-based mobile app with Unity (C#). Handled entire lifecycle from spec to release.",
+        "result": "10,000+ downloads on Play Store. Tripled ad revenue."
       }
     ]
   },
   "skills": {
-    "favorite_tech": "Favorite Technologies",
+    "favorite_tech": "Tech Stack",
     "tech_stack": "Tech Stack",
     "github_repo": "GitHub Repository",
     "languages": "Languages",
-    "frameworks_others": "Frameworks & Others",
+    "frameworks_others": "Frameworks / Others",
     "certifications_title": "Certifications",
     "favorites": [
-      "Frontend development and design with JavaScript / TypeScript + React.js",
-      "Development with Vue/Nuxt.js",
-      "Data analysis, model development, and inference with Python",
-      "Server-side development with Django"
+      "Python (Django, Flask, FastAPI, FastText) - 6 years",
+      "TypeScript (Vue3/Nuxt3, React) - 4 years",
+      "Terraform - 4 years",
+      "C# (Unity) - 6 years",
+      "Shell - 2 years"
+    ],
+    "awards": [
+      "Japan AWS Jr. Champions",
+      "AWS All Certifications (All 12 certs)",
+      "2024 Microsoft Top Partner Engineer Award (AI)",
+      "Patent holder as primary inventor",
+      "OSS contribution to Azure OpenAI sample app",
+      "Tech event speaker (GenAI, Incident Detection)",
+      "Technical blog author (Token, Terraform, AWS CDK etc.)"
     ],
     "certifications": [
-      "TOEIC Listening & Reading Test: 905",
-      "Fundamental Information Technology Engineer",
-      "Applied Information Technology Engineer",
+      "TOEIC L&R 905 / Speaking 130 / Writing 170",
       "Registered Information Security Specialist",
       "Database Specialist",
       "CKA: Certified Kubernetes Administrator",
@@ -115,28 +139,28 @@
       "Google Cloud Professional Machine Learning Engineer",
       "Google Cloud Professional Cloud Database Engineer",
       "Google Cloud Associate Cloud Engineer",
+      "Microsoft Certified: Solutions Architect Expert",
+      "Microsoft Certified: DevOps Engineer Expert",
+      "Microsoft Certified: AI Engineer Associate",
+      "Microsoft Certified: Azure Cosmos DB Developer Specialty",
       "Microsoft Certified: Azure Administrator Associate",
-      "Microsoft Certified: Azure Developer Associate",
-      "Microsoft Certified: Azure Virtual Desktop Specialty",
-      "Microsoft Certified: Azure Fundamentals",
-      "Microsoft Certified: Azure AI Fundamentals",
-      "Microsoft Certified: Azure Data Fundamentals"
+      "Microsoft Certified: Azure Developer Associate"
     ]
   },
   "contact": {
-    "title": "Let's Work Together",
-    "description": "Ready to start your project? Contact me today for a free consultation.",
-    "name_label": "Your Name",
-    "email_label": "Your Email",
+    "title": "Get In Touch",
+    "description": "Ready to discuss your project? Feel free to reach out for consultations or inquiries. Free consultation available.",
+    "name_label": "Name",
+    "email_label": "Email",
     "message_label": "Tell me about your project",
     "submit_button": "Send Message",
-    "success_message": "Your message has been sent successfully! I'll get back to you within 24 hours.",
-    "thank_you": "Thank you for reaching out."
+    "success_message": "Message sent successfully. I'll respond within 24 hours.",
+    "thank_you": "Thank you for reaching out!"
   },
   "about": {
     "title": "About",
-    "description": "This page is currently under construction.",
-    "coming_soon": "More details will be available soon.",
+    "description": "This page is currently under construction",
+    "coming_soon": "Detailed information coming soon.",
     "nav": {
       "home": "Home",
       "services": "Services",
