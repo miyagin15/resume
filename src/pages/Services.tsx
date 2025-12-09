@@ -68,9 +68,6 @@ function Services() {
                                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
                                     {service.description}
                                 </p>
-                                <div className="mt-auto pt-4 border-t border-gray-100 dark:border-gray-700 w-full">
-                                    <span className="text-primary-600 font-bold text-lg">¥10,000~/hour</span>
-                                </div>
                             </div>
                         </Tilt>
                     </motion.div>

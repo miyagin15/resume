@@ -72,7 +72,7 @@ function Home() {
                 <FaCheckCircle className="text-green-500" /> AWS/Azure/GCP Certified
               </div>
               <div className="flex items-center gap-2">
-                <FaCheckCircle className="text-green-500" /> ¥10,000~/hour
+                <FaCheckCircle className="text-green-500" /> 生成AI / Webアプリ開発 / 自動化
               </div>
             </div>
           </motion.div>
