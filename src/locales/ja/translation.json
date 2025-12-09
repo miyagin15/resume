@@ -1,10 +1,11 @@
 {
   "home": {
-    "title": "自己紹介",
-    "description": "7年以上のWebアプリケーション開発経験（インターンシップ含む）を持つSREエンジニアです。ユーザーに価値のある影響を与えることを大切にしています。最新技術に触れ、知見を共有することに興味があります。",
+    "title": "スケーラブルなWebソリューションの構築",
+    "description": "高性能なWebアプリケーションと堅牢なインフラストラクチャの構築を支援します。SREとフルスタック開発における7年以上の経験を活かし、信頼性が高く、スケーラブルで、ユーザー中心のソリューションを提供します。",
+    "cta": "仕事を依頼する",
     "experiences": [
       {
-        "period": "2021-",
+        "period": "2021-現在",
         "where": "IT通信",
         "content": "AIサービスのインフラストラクチャとサーバーサイド開発をリード。Terraformを使用したInfrastructure as Codeの設計・実装。デプロイメント時間を50%削減し、1日50,000以上のリクエストを処理。"
       },
@@ -25,29 +26,52 @@
       }
     ]
   },
+  "services": {
+    "title": "提供サービス",
+    "description": "ビジネスの目標達成を支援する技術サービスを提供します。",
+    "items": [
+      {
+        "title": "Webアプリケーション開発",
+        "description": "React, TypeScript, Pythonなどの最新技術を使用したフルスタック開発。レスポンシブで高速、SEOに最適化されたWebアプリを構築します。",
+        "icon": "code"
+      },
+      {
+        "title": "クラウドインフラ (SRE)",
+        "description": "AWSやAzure上でのスケーラブルなクラウドインフラの設計・管理。アプリケーションの信頼性、セキュリティ、コスト効率を保証します。",
+        "icon": "cloud"
+      },
+      {
+        "title": "技術コンサルティング",
+        "description": "技術スタックの選定、アーキテクチャ設計、開発プロセスに関する専門的なアドバイス。情報に基づいた技術的な意思決定を支援します。",
+        "icon": "consulting"
+      }
+    ]
+  },
   "works": {
-    "title": "職務経歴・作品",
-    "description": "職務経験、学生時代の経験、趣味開発の作品をご紹介します",
-    "employment_title": "職務経歴詳細",
-    "student_title": "学生時代の経験",
-    "hobby_title": "趣味開発・リリース済みアプリ",
-    "employments": [
-      "Azure OpenAIベースのChatGPTサービスのインフラストラクチャとサーバーサイド開発をリード、100社以上に採用",
-      "350台以上の仮想マシンをARMからTerraformに移行し、デプロイメント時間を50%削減",
-      "98%の精度と30分以上早い検出を実現するAI駆動の障害検出システムを開発",
-      "10,000ダウンロード以上、初年度に広告収益300%増加を達成したARベースのモバイルアプリを構築",
-      "GitHub ActionsとCircleCIを使用したCI/CDパイプラインの設計、構築、運用の経験",
-      "コンテナ技術（Docker、Kubernetes）を使用した開発・運用の経験"
-    ],
-    "students": [
-      "インターン1社2年 (LineAPI+LinePay+Stripe+Watson+Django+React)",
-      "2020年インターン3社 (Unity,Swift,AWS(ETL処理),Swift)",
-      "2021年インターン3社 (Unity,GCP,React,CloudFormation,CDK)"
-    ],
-    "hobbies": [
-      "AI顔の大きさ診断アプリ (Unity+ncmb+firebase)",
-      "カロリーアプリ (reactNative+gcp)",
-      "ナッツの栄養アプリ (Flutter+firebase)"
+    "title": "実績紹介",
+    "description": "実際の問題解決における専門知識を示すプロジェクト事例。",
+    "items": [
+      {
+        "title": "ChatGPTサービス基盤構築",
+        "category": "SRE / Backend",
+        "challenge": "高トラフィックが予想される新規AIサービスのために、スケーラブルでセキュアなインフラが必要だった。",
+        "solution": "Azure OpenAIとTerraformを使用したサーバーレスアーキテクチャを設計し、自動プロビジョニングを実現。",
+        "result": "100社以上の企業クライアントと1日5万件以上のリクエストを99.9%の稼働率で処理することに成功。"
+      },
+      {
+        "title": "クラウド移行と最適化",
+        "category": "DevOps",
+        "challenge": "レガシーなインフラは手動運用でエラーが発生しやすく、デプロイも遅かった。",
+        "solution": "350台以上のVMをInfrastructure as Code (Terraform) に移行し、CI/CDパイプラインを実装。",
+        "result": "デプロイ時間を50%削減し、手動設定によるエラーを排除。"
+      },
+      {
+        "title": "AI障害検知システム",
+        "category": "AI / ML",
+        "challenge": "手動監視では微細なシステムの異常を見逃し、インシデント対応が遅れていた。",
+        "solution": "深層学習モデルを使用したAI駆動の検知システムを開発。",
+        "result": "98%の精度を達成し、以前より30分以上早くインシデントを検知可能に。"
+      }
     ]
   },
   "skills": {
@@ -64,40 +88,49 @@
       "Django を用いたサーバーサイド開発"
     ],
     "certifications": [
-      "English Speaking (InstaBiz): 150点",
-      "TOEIC Listening & Reading Test: 815点",
+      "TOEIC Listening & Reading Test: 905点",
       "基本情報技術者",
       "応用情報技術者",
-      "情報処理安全確保支援士（暫定）",
+      "情報処理安全確保支援士",
       "データベーススペシャリスト",
+      "CKA: Certified Kubernetes Administrator",
+      "CKAD: Certified Kubernetes Application Developer",
+      "AWS Certified Solutions Architect – Professional",
+      "AWS Certified DevOps Engineer – Professional",
       "AWS Certified Solutions Architect – Associate",
       "AWS Certified Developer – Associate",
       "AWS Certified SysOps Administrator – Associate",
-      "AWS Certified DevOps Engineer – Professional",
-      "AWS Certified Security – Specialty",
+      "AWS Certified Cloud Practitioner",
       "AWS Certified Advanced Networking – Specialty",
+      "AWS Certified Security – Specialty",
       "AWS Certified Machine Learning – Specialty",
       "AWS Certified Data Analytics – Specialty",
       "AWS Certified Database – Specialty",
       "AWS Certified SAP on AWS – Specialty",
-      "Microsoft Certified: Azure Security Engineer Associate (AZ-500)",
-      "Microsoft Certified: Azure Developer Associate (AZ-204)",
-      "Designing and Implementing Microsoft DevOps Solutions (AZ-400)",
-      "Microsoft Certified: Azure Virtual Desktop Specialty (AZ-140)",
-      "Microsoft Certified: Azure AI Fundamentals (AI-900)",
-      "Microsoft Certified: Azure AI Engineer Associate (AI-102)",
-      "Microsoft Certified: Azure Data Fundamentals (DP-900)",
-      "Microsoft Certified: Azure Cosmos DB Developer Specialty (DP-420)"
+      "Google Cloud Professional Cloud Architect",
+      "Google Cloud Professional Cloud Developer",
+      "Google Cloud Professional Cloud DevOps Engineer",
+      "Google Cloud Professional Cloud Security Engineer",
+      "Google Cloud Professional Data Engineer",
+      "Google Cloud Professional Machine Learning Engineer",
+      "Google Cloud Professional Cloud Database Engineer",
+      "Google Cloud Associate Cloud Engineer",
+      "Microsoft Certified: Azure Administrator Associate",
+      "Microsoft Certified: Azure Developer Associate",
+      "Microsoft Certified: Azure Virtual Desktop Specialty",
+      "Microsoft Certified: Azure Fundamentals",
+      "Microsoft Certified: Azure AI Fundamentals",
+      "Microsoft Certified: Azure Data Fundamentals"
     ]
   },
   "contact": {
     "title": "お問い合わせ",
-    "description": "コラボレーション、仕事の機会、その他のお問い合わせなど、お気軽にご連絡ください。",
+    "description": "プロジェクトのご相談やご依頼など、お気軽にご連絡ください。無料相談も承っております。",
     "name_label": "お名前",
     "email_label": "メールアドレス",
-    "message_label": "メッセージ",
-    "submit_button": "送信",
-    "success_message": "メッセージが正常に送信されました！",
+    "message_label": "プロジェクトについて教えてください",
+    "submit_button": "メッセージを送信",
+    "success_message": "メッセージが送信されました。24時間以内に返信いたします。",
     "thank_you": "お問い合わせいただきありがとうございます。"
   },
   "about": {
@@ -106,7 +139,8 @@
     "coming_soon": "詳細な情報は近日公開予定です。",
     "nav": {
       "home": "ホーム",
-      "works": "職務経歴",
+      "services": "サービス",
+      "works": "実績",
       "skills": "スキル",
       "about": "About",
       "contact": "お問い合わせ"

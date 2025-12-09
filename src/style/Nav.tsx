@@ -13,6 +13,7 @@ function Nav() {
 
   const navItems = [
     { to: 'home', icon: <AiOutlineHome className="w-5 h-5" />, label: t('about.nav.home') },
+    { to: 'services', icon: <GiBiceps className="w-5 h-5" />, label: t('about.nav.services') },
     { to: 'works', icon: <GiVintageRobot className="w-5 h-5" />, label: t('about.nav.works') },
     { to: 'skills', icon: <GiBiceps className="w-5 h-5" />, label: t('about.nav.skills') },
     { to: 'contact', icon: <AiOutlineMail className="w-5 h-5" />, label: t('about.nav.contact') },
