@@ -50,8 +50,15 @@
         "title": "生成AI Webアプリケーション基盤構築",
         "category": "SRE / Backend",
         "challenge": "大企業向けにセキュアなChatGPT代替サービスが必要。高トラフィックに対応できるスケーラブルな基盤が求められた。",
-        "solution": "Azure OpenAIを活用したWebアプリのインフラ設計・IaC実装・CI/CD構築。Tokenizer最適化とRAG自動評価CI環境を構築。",
+        "solution": "Azure OpenAIを活用したWebアプリのインフラ設計・IaC実装・CI/CD構築。Tokenizer最適化により応答時間を大幅に改善。",
         "result": "100社以上に導入。1社で日次3,000人超のアクティブユーザー、1日50,000件以上のリクエスト処理。応答待機時間を30秒から1秒未満に短縮。"
+      },
+      {
+        "title": "生成AIプロダクトのRAG評価・E2Eテスト自動化基盤",
+        "category": "GenAI / QA",
+        "challenge": "RAGの品質担保と、頻繁な機能更新に追従するテスト自動化が必要だった。手動テストでは時間がかかりすぎる。",
+        "solution": "RAG自動評価CI環境を構築し、品質メトリクスを自動測定。Playwrightによる E2Eテスト環境を整備し、Kubernetesでテストを並列実行。",
+        "result": "RAG品質を継続的に監視可能に。テスト実行時間を並列化により70%削減。リリースサイクルを加速。"
       },
       {
         "title": "ARM TemplateからTerraformへの移行",

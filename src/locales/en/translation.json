@@ -64,8 +64,15 @@
         "title": "Enterprise ChatGPT Platform",
         "category": "SRE / Backend",
         "challenge": "Enterprise clients needed secure ChatGPT alternative with high-traffic scalability.",
-        "solution": "Designed infrastructure with Azure OpenAI, IaC implementation, CI/CD. Optimized Tokenizer and built RAG auto-evaluation CI.",
+        "solution": "Designed infrastructure with Azure OpenAI, IaC implementation, CI/CD. Optimized Tokenizer to dramatically reduce response time.",
         "result": "Deployed to 100+ companies. 3,000+ daily active users per client, 50,000+ requests/day. Reduced response wait from 30s to <1s."
+      },
+      {
+        "title": "GenAI RAG Evaluation & E2E Test Automation",
+        "category": "GenAI / QA",
+        "challenge": "Needed quality assurance for RAG and test automation to keep up with frequent updates. Manual testing was too time-consuming.",
+        "solution": "Built RAG auto-evaluation CI environment for continuous quality metrics. Implemented Playwright E2E testing with Kubernetes parallel execution.",
+        "result": "Enabled continuous RAG quality monitoring. Reduced test execution time by 70% through parallelization. Accelerated release cycles."
       },
       {
         "title": "ARM Template to Terraform Migration",
