@@ -58,8 +58,12 @@ function Skills() {
       icon: <SiMicrosoftazure className="w-8 h-8" />,
       color: 'from-blue-500 to-blue-700',
       certs: [
+        'Microsoft Certified: Solutions Architect Expert',
+        'Microsoft Certified: DevOps Engineer Expert',
+        'Microsoft Certified: AI Engineer Associate',
         'Microsoft Certified: Azure Administrator Associate',
         'Microsoft Certified: Azure Developer Associate',
+        'Microsoft Certified: Azure Cosmos DB Developer Specialty',
         'Microsoft Certified: Azure Virtual Desktop Specialty',
         'Microsoft Certified: Azure Fundamentals',
         'Microsoft Certified: Azure AI Fundamentals',
@@ -78,7 +82,7 @@ function Skills() {
   ];
 
   const otherCerts = [
-    'TOEIC Listening & Reading Test: 905',
+    'TOEIC L&R: 905 / Speaking: 130 / Writing: 170',
     t('language.ja') === 'JP' ? '基本情報技術者' : 'Fundamental Information Technology Engineer',
     t('language.ja') === 'JP' ? '応用情報技術者' : 'Applied Information Technology Engineer',
     t('language.ja') === 'JP' ? '情報処理安全確保支援士' : 'Registered Information Security Specialist',
